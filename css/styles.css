@@ -8,22 +8,22 @@
     --accent-color: #ff6b35;
     
     /* Theme 2: Violet Moderne (commenté) */
-    /*
-    --primary-color: #6c5ce7;
+    
+    /* --primary-color: #6c5ce7;
     --primary-dark: #5a4dd4;
     --primary-light: #8b7ed8;
     --secondary-color: #fd79a8;
-    --accent-color: #fdcb6e;
-    */
+    --accent-color: #fdcb6e; */
+    
     
     /* Theme 3: Vert Corporate (commenté) */
-    /*
-    --primary-color: #00b894;
+    
+    /* --primary-color: #00b894;
     --primary-dark: #00a085;
     --primary-light: #55c3a3;
     --secondary-color: #0984e3;
-    --accent-color: #e17055;
-    */
+    --accent-color: #e17055; */
+   
     
     /* Couleurs neutres */
     --dark-color: #2d3436;
@@ -416,6 +416,53 @@ h4 { font-size: 1.5rem; }
     justify-content: center;
 }
 
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white-color);
+    border-radius: 20px;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-base);
+}
+
+.profile-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    transition: var(--transition-base);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h4 {
+    color: var(--dark-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.profile-info p {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 .profile-placeholder {
     width: 250px;
     height: 250px;
@@ -770,6 +817,15 @@ h4 { font-size: 1.5rem; }
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-photo {
+        padding: var(--spacing-md);
     }
     
     .stats {
