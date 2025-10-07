@@ -97,13 +97,6 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 
 ### Modifications recommandées :
 
-#### Contenu à remplacer :
-- [ ] Email de contact (actuellement `contact@vmsi.fr`)
-- [ ] Téléphone (actuellement placeholder)
-- [ ] Adresse (actuellement placeholder)
-- [ ] Images et captures d'écran de l'extension
-- [ ] Logo personnalisé si souhaité
-
 #### Optimisations SEO à compléter :
 - [ ] Ajouter des images avec attributs `alt`
 - [ ] Compléter les méta descriptions
