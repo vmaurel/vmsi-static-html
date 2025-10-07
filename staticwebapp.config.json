@@ -3,21 +3,21 @@
     {
       "route": "/*",
       "headers": {
-        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1; mode=block"
       }
     }
   ],
-  "responseOverrides": {
-    "401": {
-      "redirect": "/login"
-    }
+  "navigationFallback": {
+    "rewrite": "/index.html"
   },
-  "platform": {
-    "apiRuntime": "node:18"
+  "mimeTypes": {
+    ".json": "application/json"
   },
-  "forwardingGateway": {
-    "requiredHeaders": {
-      "X-Azure-FDID": "your-frontdoor-id"
-    }
-  }
+  "globalHeaders": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload"
+  },
+  "trailingSlash": "never"
 }
