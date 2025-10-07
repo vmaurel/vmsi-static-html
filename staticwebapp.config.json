@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+      }
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "redirect": "/login"
+    }
+  },
+  "platform": {
+    "apiRuntime": "node:18"
+  },
+  "forwardingGateway": {
+    "requiredHeaders": {
+      "X-Azure-FDID": "your-frontdoor-id"
+    }
+  }
+}
