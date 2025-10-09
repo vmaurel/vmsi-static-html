@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Wallet - Extension Chrome Officielle | VMSI</title>
+    <meta name="description" content="Extended Wallet transforme votre portefeuille Vinted en tableau de bord professionnel. Statistiques complètes, analyse des tendances, optimisation des bénéfices. 28€ - Paiement unique.">
+    <meta name="keywords" content="extended wallet, vinted, extension chrome, statistiques, ventes, tableau de bord, analytics">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vmsi-solutions.fr/vinted-extension.html">
+    <meta property="og:title" content="Extended Wallet - Boostez vos ventes Vinted">
+    <meta property="og:description" content="Extension Chrome pour analyser vos performances Vinted et optimiser vos bénéfices">
+    <meta property="og:image" content="https://www.vmsi-solutions.fr/images/vinted-extension-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.vmsi-solutions.fr/vinted-extension.html">
+    <meta property="twitter:title" content="Extended Wallet - Extension Chrome">
+    <meta property="twitter:description" content="Analysez vos performances Vinted comme un pro">
+
+    <!-- Favicon spécifique à cette page -->
+    <link rel="icon" type="image/svg+xml" href="images/extended-wallet-favicon.svg">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-128.png" sizes="128x128">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/tunnel-vente.css">
+
+    <!-- Stripe -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+    <!-- Schema.org markup for Google+ -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Extended Wallet",
+      "operatingSystem": "Chrome",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "28",
+        "priceCurrency": "EUR"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "VMSI Solutions"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-tunnel">
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-row">
+                    <div class="app-logo">
+                        <img src="images/extended-wallet-logo.svg" alt="Extended Wallet Logo" class="logo-image">
+                    </div>
+                    <div class="brand-aside">
+                        <div class="hero-badge">
+                            <i class="fab fa-chrome"></i>
+                            Extension Chrome
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transformez votre portefeuille Vinted en <span class="highlight">tableau de bord professionnel</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Extended Wallet ajoute des statistiques détaillées, des filtres avancés et des exports CSV/PDF 
+                    directement dans votre interface Vinted. Analysez vos performances comme un pro !
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Statistiques détaillées</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Utilisateurs actifs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">CSV+PDF</span>
+                        <span class="stat-label">Exports inclus</span>
+                    </div>
+                </div>
+
+                <div class="cta-primary">
+                    <button class="btn-cta" onclick="scrollToOrder()">
+                        <i class="fas fa-download"></i>
+                        Obtenir l'extension maintenant
+                        <small>Paiement unique - 28€</small>
+                    </button>
+                    <p class="guarantee">✓ Garantie satisfait ou remboursé 30 jours</p>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="browser-url">vinted.fr/member/wallet</div>
+                    </div>
+                    <div class="browser-content">
+                        <div class="extension-demo">
+                            <div class="vinted-interface">
+                                <h3>Votre portefeuille</h3>
+                                <div class="balance">57,32 €</div>
+                            </div>
+                            <div class="extension-overlay">
+                                <div class="stats-widget">
+                                    <h4><i class="fas fa-chart-line"></i> Extended Wallet</h4>
+                                    <div class="stat-row">
+                                        <span>CA ce mois :</span>
+                                        <strong>1 247,50 €</strong>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span>Nb de ventes :</span>
+                                        <strong>42 articles</strong>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span>Prix moyen :</span>
+                                        <strong>29,70 €</strong>
+                                    </div>
+                                    <div class="stat-row profit">
+                                        <span>Bénéfice net :</span>
+                                        <strong>+658,30 €</strong>
+                                    </div>
+                                    <div class="trend">
+                                        <i class="fas fa-download"></i>
+                                        Export CSV • Rapport PDF
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problème / Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="problem">
+                <h2><i class="fas fa-exclamation-triangle"></i> Le portefeuille Vinted basique vous limite...</h2>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Aucune statistique détaillée</h3>
+                        <p>Juste votre solde actuel. Impossible de savoir combien vous avez vraiment vendu, acheté, ou votre évolution mensuelle !</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-filter"></i>
+                        <h3>Pas de filtres ni d'analyse</h3>
+                        <p>Comment connaître vos performances par période, catégorie ou type d'opération ? Le portefeuille basique ne le permet pas.</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-file-export"></i>
+                        <h3>Impossible d'exporter vos données</h3>
+                        <p>Besoin d'un rapport pour votre comptable ou vos déclarations ? Copier-coller à la main = mission impossible !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution">
+                <h2><i class="fas fa-lightbulb"></i> Extended Wallet change tout !</h2>
+                <div class="solution-preview">
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>❌ AVANT (portefeuille basique)</h4>
+                            <div class="basic-view">
+                                <p>💰 "Mon solde : 127,40 €"</p>
+                                <p>❓ "Combien j'ai vendu ce mois ?"</p>
+                                <p>� "Quelle est ma progression ?"</p>
+                                <p class="question">� Aucune réponse possible</p>
+                            </div>
+                        </div>
+                        <div class="after">
+                            <h4>✅ APRÈS (Extended Wallet)</h4>
+                            <div class="enhanced-view">
+                                <p><strong>CA mensuel :</strong> 1 247,50 €</p>
+                                <p><strong>42 ventes</strong> • Prix moyen : 29,70 €</p>
+                                <p><strong>Bénéfice net :</strong> +658,30 €</p>
+                                <p class="profit">📈 +34% vs mois dernier</p>
+                                <p class="trend">💾 Export CSV + Rapport PDF disponibles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités détaillées -->
+    <section class="features-detailed">
+        <div class="container">
+            <h2>Découvrez tout ce que vous obtenez</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Statistiques détaillées en temps réel</h3>
+                    <p>CA, nombre de ventes, prix moyen, bénéfices nets, évolution mensuelle - plus de 15 métriques disponibles</p>
+                    <div class="feature-value">Valeur : 197€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Filtres avancés puissants</h3>
+                    <p>Filtrez par période, type d'opération, montant, statut - analysez exactement ce qui vous intéresse</p>
+                    <div class="feature-value">Valeur : 127€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-csv"></i>
+                    </div>
+                    <h3>Export CSV complet</h3>
+                    <p>Exportez toutes les opérations affichées en CSV pour Excel, votre comptable ou vos analyses personnelles</p>
+                    <div class="feature-value">Valeur : 89€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Rapport PDF mensuel</h3>
+                    <p>Générez un rapport PDF professionnel du mois affiché avec toutes vos statistiques et graphiques</p>
+                    <div class="feature-value">Valeur : 156€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trending-up"></i>
+                    </div>
+                    <h3>Analyse des tendances</h3>
+                    <p>Évolution de vos performances, comparaisons mois par mois, identification de vos pics de vente</p>
+                    <div class="feature-value">Valeur : 97€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Interface native Vinted</h3>
+                    <p>S'intègre parfaitement dans votre portefeuille Vinted comme si c'était une fonctionnalité officielle</p>
+                    <div class="feature-value">Valeur : 67€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% sécurisé et privé</h3>
+                    <p>Aucune donnée n'est collectée ou transmise - tout reste dans votre navigateur</p>
+                    <div class="feature-value">Valeur : 89€</div>
+                </div>
+            </div>
+
+            <div class="total-value">
+                <p>Valeur totale : <span class="old-price">822€</span></p>
+                <p>Votre prix aujourd'hui : <span class="new-price">28€</span></p>
+                <p class="savings">Vous économisez 794€ (97% de réduction)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Ce que disent nos utilisateurs</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Enfin je peux voir mes vraies performances ! Les statistiques détaillées et les filtres m'ont permis d'identifier mes meilleures périodes de vente. L'export CSV me fait gagner des heures pour ma comptabilité."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/60?img=1" alt="Sophie M.">
+                        <div>
+                            <strong>Sophie M.</strong>
+                            <span>Vendeuse Vinted depuis 3 ans</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Le rapport PDF mensuel est parfait pour mes déclarations ! Plus besoin de faire des captures d'écran ou de noter mes chiffres à la main. Tout est automatique et professionnel."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/60?img=2" alt="Marie L.">
+                        <div>
+                            <strong>Marie L.</strong>
+                            <span>Auto-entrepreneuse mode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Les filtres avancés sont géniaux ! Je peux analyser mes ventes par période, voir quels types d'articles marchent le mieux... C'est comme avoir un tableau de bord pro directement dans Vinted !"</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/60?img=3" alt="Emma D.">
+                        <div>
+                            <strong>Emma D.</strong>
+                            <span>Revendeuse professionnelle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgence et rareté -->
+    <section class="urgency">
+        <div class="container">
+            <div class="urgency-box">
+                <h2><i class="fas fa-fire"></i> Offre limitée dans le temps</h2>
+                <p>Le prix passe de 28€ à 67€ dans :</p>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span class="number" id="hours">23</span>
+                        <span class="label">heures</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="minutes">47</span>
+                        <span class="label">minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="seconds">32</span>
+                        <span class="label">secondes</span>
+                    </div>
+                </div>
+                <p class="limited-spots">⚠️ Plus que 23 licences disponibles à ce prix</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bon de commande -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="order-box">
+                <div class="order-header">
+                    <h2><i class="fas fa-shopping-cart"></i> Commandez maintenant</h2>
+                    <p>Accès immédiat après paiement</p>
+                </div>
+
+                <div class="order-content">
+                    <div class="product-summary">
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Extended Wallet - Extension Chrome</h3>
+                                <p>✓ Statistiques détaillées en temps réel (15+ métriques)</p>
+                                <p>✓ Filtres avancés par période, type, montant</p>
+                                <p>✓ Export CSV de toutes les opérations</p>
+                                <p>✓ Rapport PDF mensuel professionnel</p>
+                                <p>✓ Interface native intégrée à Vinted</p>
+                                <p>✓ Mises à jour à vie incluses</p>
+                            </div>
+                            <div class="product-price">
+                                <span class="old-price">67€</span>
+                                <span class="current-price">28€</span>
+                            </div>
+                        </div>
+
+                        <div class="order-total">
+                            <div class="total-line">
+                                <span>Sous-total</span>
+                                <span>28,00€</span>
+                            </div>
+                            <div class="total-line">
+                                <span>TVA incluse</span>
+                                <span>0,00€</span>
+                            </div>
+                            <div class="total-line final">
+                                <span>Total</span>
+                                <span>28,00€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-form">
+                        <h3>Finaliser votre commande</h3>
+                        
+                        <div class="payment-info">
+                            <p class="payment-description">
+                                <i class="fas fa-info-circle"></i>
+                                Paiement sécurisé par Stripe. Vous recevrez votre lien de téléchargement par email immédiatement après l'achat.
+                            </p>
+                        </div>
+
+                        <div class="guarantees">
+                            <div class="guarantee-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Paiement 100% sécurisé</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-undo"></i>
+                                <span>Satisfait ou remboursé 30 jours</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-download"></i>
+                                <span>Accès immédiat</span>
+                            </div>
+                        </div>
+
+                        <div class="stripe-button-container">
+                            <stripe-buy-button
+                                buy-button-id="buy_btn_1SFrdg2QTikTw4lCbQZ0Y2LQ"
+                                publishable-key="pk_test_51SF86G2QTikTw4lCwj8z1VSauc8lr4UQKGmTciY3tc7kv4fsb1rfqZV8vfTtawrwxVhdqBNaoaPzhftQS1QPy0Cu00zZk6Uy3c"
+                            >
+                            </stripe-buy-button>
+                        </div>
+
+                        <p class="terms">
+                            En commandant, vous acceptez nos 
+                            <a href="#" target="_blank">conditions de vente</a> 
+                            et notre 
+                            <a href="#" target="_blank">politique de confidentialité</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-chart-bar"></i> Quelles statistiques obtient-on exactement ?</h3>
+                    <p>Plus de 15 métriques : CA mensuel, nombre de ventes, prix moyen, bénéfices nets, évolution vs mois précédent, répartition par type d'opération, et bien plus !</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-filter"></i> Comment fonctionnent les filtres avancés ?</h3>
+                    <p>Vous pouvez filtrer vos opérations par période (jour, semaine, mois), type (ventes, achats, frais), montant, statut... Parfait pour analyser précisément vos performances.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-file-csv"></i> Que contient l'export CSV ?</h3>
+                    <p>Toutes les opérations visibles à l'écran avec leur date, type, montant, description, statut... Compatible Excel et idéal pour votre comptable.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-file-pdf"></i> À quoi ressemble le rapport PDF ?</h3>
+                    <p>Un document professionnel avec vos statistiques du mois, graphiques d'évolution, et résumé détaillé. Parfait pour vos déclarations ou votre suivi personnel.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-download"></i> Comment recevoir l'extension après achat ?</h3>
+                    <p>Vous recevrez immédiatement un lien de téléchargement par email avec les instructions d'installation détaillées.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-undo"></i> Puis-je être remboursé si je ne suis pas satisfait ?</h3>
+                    <p>Oui, vous avez 30 jours pour demander un remboursement complet, sans justification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer simplifié -->
+    <footer class="footer-tunnel">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/vmsi-logo.svg" alt="VMSI Solutions">
+                    <p>Solutions innovantes de développement logiciel</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="#" target="_blank">Conditions de vente</a>
+                    <a href="#" target="_blank">Politique de confidentialité</a>
+                    <a href="#" target="_blank">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VMSI Solutions. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/tunnel-vente.js"></script>
+</body>
+</html>

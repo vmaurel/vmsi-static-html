@@ -1,0 +1,118 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Use local font files included in the repository */
+    @font-face {
+      font-family: 'Zooja Pro';
+      src: url('../fonts/Web%20Fonts/d9eab5143efc98cbd074fe4083108c58.woff2') format('woff2'),
+           url('../fonts/Web%20Fonts/d9eab5143efc98cbd074fe4083108c58.woff') format('woff'),
+           url('../fonts/Zooja%20Pro.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    .vinted-v {
+      font-family: 'Zooja Pro', 'Zooja Pro Regular', Arial, sans-serif;
+      paint-order: stroke fill;
+    }
+  </style>
+  <!-- Gradient definitions -->
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Secondary gradient for wallet -->
+    <linearGradient id="walletGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Chart gradient (darker) -->
+    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0C6A6E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#08575B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Vinted V gradient - très contrasté -->
+    <linearGradient id="vintedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#09B1BA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F8084;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- V outline fort -->
+    <linearGradient id="vintedOutline" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle - flat color -->
+  <circle cx="100" cy="100" r="95" fill="#10A0A5" filter="url(#dropshadow)"/>
+  
+  <!-- Inner circle for depth -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <!-- V de Vinted converti en tracé (outline) depuis la police Zooja Pro pour un rendu déterministe -->
+  <!-- Note: transformation centrée approximativement sur (100,138). Ajustable finement si besoin. -->
+  <g id="vinted-v-path-fill" opacity="0.9" transform="translate(100,154) scale(0.2,-0.2) translate(-204.5, 0)">
+    <path d="M534 693q1 1 2 1v-1q-6 -11 -13.5 -32.5t-16 -46.5t-17 -49t-15.5 -40q1 -1 1 -4q0 -7 -5 -16.5t-7 -13.5l-39 -121q-11 -30 -22.5 -67.5t-27 -76t-35 -74.5t-46.5 -63t-61.5 -42.5t-78.5 -12.5q-7 -4 -17 -4q-23 0 -38.5 21t-24 49t-10.5 56t1 43q-3 28 -5 63t-2 73t0.5 78.5t1.5 78.5l6 103q1 18 12.5 33t28.5 26t37 17.5t40 6.5q37 0 61 -15.5t23 -46.5q0 -9 -6.5 -30.5t-8.5 -46.5q-3 -88 -9 -172.5t-9 -173.5v-12v-18.5t0.5 -17t2.5 -8.5q11 18 22 41t21 48.5t20 52t19 50.5q16 43 31.5 86.5t33 86.5t38.5 85t47 81q-1 -5 -3.5 -9.5t-1.5 -8.5q0 -2 2 -2t3.5 3l2.5 5q1 0 3 1.5t4 1.5q1 -1 1 -2q8 6 12 13t9 13v-4q0 1 2 3l1 1h1q-1 -1 -1 -2q3 0 6.5 4.5t6.5 4.5q1 0 2 -1q1 0 5.5 3.5t6.5 8.5q2 0 2 -6z" fill="#FFFFFF"/>
+  </g>
+  <!-- Fin outline du V -->
+  <g id="vinted-v-path-outline" opacity="0.9" transform="translate(100,154) scale(0.2,-0.2) translate(-204.5, 0)">
+    <path d="M534 693q1 1 2 1v-1q-6 -11 -13.5 -32.5t-16 -46.5t-17 -49t-15.5 -40q1 -1 1 -4q0 -7 -5 -16.5t-7 -13.5l-39 -121q-11 -30 -22.5 -67.5t-27 -76t-35 -74.5t-46.5 -63t-61.5 -42.5t-78.5 -12.5q-7 -4 -17 -4q-23 0 -38.5 21t-24 49t-10.5 56t1 43q-3 28 -5 63t-2 73t0.5 78.5t1.5 78.5l6 103q1 18 12.5 33t28.5 26t37 17.5t40 6.5q37 0 61 -15.5t23 -46.5q0 -9 -6.5 -30.5t-8.5 -46.5q-3 -88 -9 -172.5t-9 -173.5v-12v-18.5t0.5 -17t2.5 -8.5q11 18 22 41t21 48.5t20 52t19 50.5q16 43 31.5 86.5t33 86.5t38.5 85t47 81q-1 -5 -3.5 -9.5t-1.5 -8.5q0 -2 2 -2t3.5 3l2.5 5q1 0 3 1.5t4 1.5q1 -1 1 -2q8 6 12 13t9 13v-4q0 1 2 3l1 1h1q-1 -1 -1 -2q3 0 6.5 4.5t6.5 4.5q1 0 2 -1q1 0 5.5 3.5t6.5 8.5q2 0 2 -6z" fill="none" stroke="url(#vintedOutline)" stroke-width="1.2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Wallet base - plus petit pour laisser voir le V -->
+  <rect x="55" y="75" width="90" height="60" rx="6" ry="6" fill="url(#walletGradient)" filter="url(#dropshadow)"/>
+  
+  <!-- Wallet fold/flap -->
+  <path d="M 55 88 Q 100 78 145 88 L 145 82 Q 100 72 55 82 Z" fill="rgba(0,102,204,0.2)"/>
+  
+  <!-- Wallet edge highlight -->
+  <rect x="55" y="75" width="90" height="4" rx="2" ry="2" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Chart bars inside wallet - plus petites -->
+  <rect x="68" y="98" width="6" height="20" rx="2" fill="url(#chartGradient)" opacity="0.8"/>
+  <rect x="78" y="94" width="6" height="24" rx="2" fill="url(#chartGradient)" opacity="0.9"/>
+  <rect x="88" y="90" width="6" height="28" rx="2" fill="url(#chartGradient)"/>
+  <rect x="98" y="92" width="6" height="26" rx="2" fill="url(#chartGradient)" opacity="0.9"/>
+  <rect x="108" y="95" width="6" height="23" rx="2" fill="url(#chartGradient)" opacity="0.8"/>
+  <rect x="118" y="99" width="6" height="19" rx="2" fill="url(#chartGradient)" opacity="0.7"/>
+  <rect x="128" y="102" width="6" height="16" rx="2" fill="url(#chartGradient)" opacity="0.6"/>
+  
+  <!-- Trending arrow -->
+  <path d="M 115 102 L 130 97 L 127 100 L 140 95 L 137 98 L 135 96" 
+        stroke="url(#chartGradient)" stroke-width="2" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- Decorative elements -->
+  <!-- Small circles for modern touch -->
+  <circle cx="70" cy="50" r="3" fill="rgba(255,255,255,0.4)" opacity="0.6"/>
+  <circle cx="130" cy="45" r="2" fill="rgba(255,255,255,0.3)" opacity="0.5"/>
+  <circle cx="160" cy="130" r="4" fill="rgba(255,255,255,0.2)" opacity="0.4"/>
+  <circle cx="40" cy="140" r="2.5" fill="rgba(255,255,255,0.3)" opacity="0.5"/>
+  
+  <!-- Title text -->
+  <text x="100" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+    Extended
+  </text>
+  <text x="100" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+    Wallet
+  </text>
+</svg>
