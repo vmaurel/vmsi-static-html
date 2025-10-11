@@ -172,7 +172,6 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 - **Hero optimisé** : Logo prominent, messaging clair
 - **Social proof** : Témoignages clients
 - **Urgence** : Offre limitée avec countdown
-- **Garanties** : 30 jours satisfait ou remboursé
 
 ## 🎯 Roadmap
 

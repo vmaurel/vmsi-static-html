@@ -70,12 +70,12 @@ function showPriceIncrease() {
     const oldPrices = document.querySelectorAll('.old-price');
 
     currentPrices.forEach(price => {
-        price.textContent = '67€';
+        price.textContent = '28€';
         price.style.color = '#e74c3c';
     });
 
     oldPrices.forEach(price => {
-        price.textContent = '97€';
+        price.textContent = '733€';
     });
 
     // Notification d'augmentation

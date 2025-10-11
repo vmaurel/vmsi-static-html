@@ -83,8 +83,9 @@
                 </h1>
                 
                 <p class="hero-subtitle">
-                    Extended Wallet ajoute des statistiques détaillées, des filtres avancés et des exports CSV/PDF 
-                    directement dans votre interface Vinted. Analysez vos performances comme un pro !
+                    Extended Wallet ajoute un sommaire financier détaillé, une catégorisation automatique, 
+                    des filtres de recherche avancés et des exports CSV/PDF directement dans votre interface Vinted. 
+                    Analysez vos performances comme un pro !
                 </p>
 
                 <div class="hero-stats">
@@ -106,9 +107,8 @@
                     <button class="btn-cta" onclick="scrollToOrder()">
                         <i class="fas fa-download"></i>
                         Obtenir l'extension maintenant
-                        <small>Paiement unique - 28€</small>
+                        <small>Paiement annuel - 28€</small>
                     </button>
-                    <p class="guarantee">✓ Garantie satisfait ou remboursé 30 jours</p>
                 </div>
             </div>
 
@@ -129,33 +129,153 @@
                                 <div class="balance">57,32 €</div>
                             </div>
                             <div class="extension-overlay">
+                                <div class="wallet-summary">
+                                    <div class="summary-card income">
+                                        <h4>Ventes</h4>
+                                        <div class="amount">+1579.21 €</div>
+                                        <div class="details">46 transactions</div>
+                                    </div>
+                                    <div class="summary-card expense">
+                                        <h4>Achats/Frais</h4>
+                                        <div class="amount">-280.41 €</div>
+                                        <div class="details">21 transactions</div>
+                                    </div>
+                                    <div class="summary-card warning">
+                                        <h4>Retraits</h4>
+                                        <div class="amount">-1100.00 €</div>
+                                        <div class="details">4 transactions</div>
+                                    </div>
+                                    <div class="summary-card net-result">
+                                        <h4>Résultat net</h4>
+                                        <div class="amount positive">+1579.21 €</div>
+                                        <div class="details">Total 73 transactions</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="transactions-toolbar">
+                                    <div class="search-box">
+                                        <i class="fas fa-search"></i>
+                                        <input type="text" placeholder="Rechercher dans les transactions...">
+                                    </div>
+                                    <div class="export-buttons">
+                                        <button class="btn-export csv">
+                                            <i class="fas fa-file-csv"></i>
+                                            Télécharger CSV
+                                        </button>
+                                        <button class="btn-export pdf">
+                                            <i class="fas fa-file-pdf"></i>
+                                            Rapport PDF
+                                        </button>
+                                    </div>
+                                </div>
+                                
                                 <div class="stats-widget">
                                     <h4><i class="fas fa-chart-line"></i> Extended Wallet</h4>
                                     <div class="stat-row">
-                                        <span>CA ce mois :</span>
-                                        <strong>1 247,50 €</strong>
+                                        <span>Panier moyen :</span>
+                                        <strong>40.58 €</strong>
                                     </div>
                                     <div class="stat-row">
-                                        <span>Nb de ventes :</span>
-                                        <strong>42 articles</strong>
+                                        <span>Meilleure vente :</span>
+                                        <strong>220.00 €</strong>
                                     </div>
-                                    <div class="stat-row">
-                                        <span>Prix moyen :</span>
-                                        <strong>29,70 €</strong>
-                                    </div>
-                                    <div class="stat-row profit">
-                                        <span>Bénéfice net :</span>
-                                        <strong>+658,30 €</strong>
-                                    </div>
-                                    <div class="trend">
-                                        <i class="fas fa-download"></i>
-                                        Export CSV • Rapport PDF
+                                    <div class="navigation-hint">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Naviguez facilement entre les mois
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features avec captures d'écran -->
+    <section class="feature-strip">
+        <div class="container">
+            <h2>6 fonctionnalités qui transforment votre portefeuille</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Sommaire financier détaillé avec résultats du mois</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Catégorisation automatique de chaque transaction</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-search"></i>
+                    <span>Champ de recherche pour filtrer vos résultats</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-csv"></i>
+                    <span>Téléchargement CSV pour Excel et comptabilité</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Téléchargement PDF du rapport mensuel</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Navigation facile par mois via la popup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="screenshots-gallery">
+        <div class="container">
+            <h2>Découvrez Extended Wallet en images</h2>
+            <p class="gallery-subtitle">Voici comment votre portefeuille Vinted sera transformé</p>
+            
+            <div class="screenshots-grid">
+                <figure class="screenshot-card">
+                    <img src="images/screenshots/wallet-dashboard.png" alt="Interface Vinted avec Extended Wallet intégré" 
+                         onerror="this.src='images/screenshots/wallet-dashboard.svg'">
+                    <figcaption>
+                        <h3>📊 Interface Vinted transformée</h3>
+                        <p>Votre portefeuille Vinted avec Extended Wallet intégré. Sommaire financier, statistiques avancées et outils d'analyse directement dans l'interface native.</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="screenshot-card">
+                    <img src="images/screenshots/csv-excel.png" alt="Données Vinted exportées dans Excel avec Extended Wallet" 
+                         onerror="this.src='images/screenshots/csv-excel.svg'">
+                    <figcaption>
+                        <h3>📈 Export Excel professionnel</h3>
+                        <p>Toutes vos transactions Vinted exportées en CSV et ouvertes dans Excel. Colonnes optimisées pour l'analyse financière et la comptabilité.</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="screenshot-card">
+                    <img src="images/screenshots/import-wizard.png" alt="Assistant d'importation des données Extended Wallet dans Excel" 
+                         onerror="this.src='images/screenshots/import-wizard.svg'">
+                    <figcaption>
+                        <h3>🔧 Assistant d'importation Excel</h3>
+                        <p>L'assistant d'importation d'Excel qui reconnaît automatiquement le format CSV d'Extended Wallet avec les délimiteurs et encodage optimaux.</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="screenshot-card">
+                    <img src="images/screenshots/pdf-report.png" alt="Rapport PDF générée par Extended Wallet avec données réelles Vinted" 
+                         onerror="this.src='images/screenshots/pdf-report.svg'">
+                    <figcaption>
+                        <h3>📄 Rapport PDF de vos ventes</h3>
+                        <p>Document PDF professionnel généré automatiquement avec vos vraies données Vinted. Graphiques, statistiques et résumé mensuel pour vos déclarations.</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="screenshot-card">
+                    <img src="images/screenshots/extension-popup.png" alt="Interface de navigation Extended Wallet pour parcourir les mois" 
+                         onerror="this.src='images/screenshots/extension-popup.svg'">
+                    <figcaption>
+                        <h3>🗓️ Navigation rapide par période</h3>
+                        <p>Interface de navigation d'Extended Wallet permettant de consulter facilement vos données par mois et d'accéder aux différentes fonctionnalités.</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -168,13 +288,13 @@
                 <div class="problem-grid">
                     <div class="problem-item">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Aucune statistique détaillée</h3>
-                        <p>Juste votre solde actuel. Impossible de savoir combien vous avez vraiment vendu, acheté, ou votre évolution mensuelle !</p>
+                        <h3>Aucun sommaire financier</h3>
+                        <p>Impossible de voir rapidement vos ventes, achats, retraits et résultat net du mois. Juste un solde sans contexte !</p>
                     </div>
                     <div class="problem-item">
-                        <i class="fas fa-filter"></i>
-                        <h3>Pas de filtres ni d'analyse</h3>
-                        <p>Comment connaître vos performances par période, catégorie ou type d'opération ? Le portefeuille basique ne le permet pas.</p>
+                        <i class="fas fa-search"></i>
+                        <h3>Pas de recherche ni filtres</h3>
+                        <p>Comment retrouver une transaction spécifique ou analyser une période donnée ? Le portefeuille basique ne propose aucun outil de recherche.</p>
                     </div>
                     <div class="problem-item">
                         <i class="fas fa-file-export"></i>
@@ -193,18 +313,18 @@
                             <div class="basic-view">
                                 <p>💰 "Mon solde : 127,40 €"</p>
                                 <p>❓ "Combien j'ai vendu ce mois ?"</p>
-                                <p>� "Quelle est ma progression ?"</p>
-                                <p class="question">� Aucune réponse possible</p>
+                                <p>🔍 "Comment retrouver une transaction ?"</p>
+                                <p class="question">📊 Aucune visibilité sur vos performances</p>
                             </div>
                         </div>
                         <div class="after">
                             <h4>✅ APRÈS (Extended Wallet)</h4>
                             <div class="enhanced-view">
-                                <p><strong>CA mensuel :</strong> 1 247,50 €</p>
-                                <p><strong>42 ventes</strong> • Prix moyen : 29,70 €</p>
-                                <p><strong>Bénéfice net :</strong> +658,30 €</p>
-                                <p class="profit">📈 +34% vs mois dernier</p>
-                                <p class="trend">💾 Export CSV + Rapport PDF disponibles</p>
+                                <p><strong>Sommaire du mois :</strong> +1579,21 € net</p>
+                                <p><strong>46 ventes</strong> • <strong>21 achats</strong> • <strong>4 retraits</strong></p>
+                                <p><strong>Recherche avancée :</strong> filtrez par type, montant, date</p>
+                                <p class="profit">📈 Catégorisation automatique de chaque ligne</p>
+                                <p class="trend">💾 Export CSV + Rapport PDF + Navigation par mois</p>
                             </div>
                         </div>
                     </div>
@@ -220,29 +340,38 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3>Statistiques détaillées en temps réel</h3>
-                    <p>CA, nombre de ventes, prix moyen, bénéfices nets, évolution mensuelle - plus de 15 métriques disponibles</p>
+                    <h3>Sommaire financier complet</h3>
+                    <p>Tableau de bord avec ventes, achats, retraits et résultat net du mois affiché. Voyez immédiatement vos performances.</p>
                     <div class="feature-value">Valeur : 197€</div>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-filter"></i>
+                        <i class="fas fa-tags"></i>
                     </div>
-                    <h3>Filtres avancés puissants</h3>
-                    <p>Filtrez par période, type d'opération, montant, statut - analysez exactement ce qui vous intéresse</p>
+                    <h3>Catégorisation automatique</h3>
+                    <p>Chaque transaction est automatiquement catégorisée (vente, achat, frais, retrait) pour une meilleure visibilité.</p>
                     <div class="feature-value">Valeur : 127€</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Recherche et filtres avancés</h3>
+                    <p>Champ de recherche intégré pour filtrer vos transactions par titre, montant, date ou type d'opération.</p>
+                    <div class="feature-value">Valeur : 89€</div>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-file-csv"></i>
                     </div>
-                    <h3>Export CSV complet</h3>
-                    <p>Exportez toutes les opérations affichées en CSV pour Excel, votre comptable ou vos analyses personnelles</p>
-                    <div class="feature-value">Valeur : 89€</div>
+                    <h3>Export CSV pour Excel</h3>
+                    <p>Exportez toutes les transactions affichées en CSV pour Excel, votre comptable ou vos analyses personnelles.</p>
+                    <div class="feature-value">Valeur : 156€</div>
                 </div>
 
                 <div class="feature-card">
@@ -250,42 +379,24 @@
                         <i class="fas fa-file-pdf"></i>
                     </div>
                     <h3>Rapport PDF mensuel</h3>
-                    <p>Générez un rapport PDF professionnel du mois affiché avec toutes vos statistiques et graphiques</p>
-                    <div class="feature-value">Valeur : 156€</div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-trending-up"></i>
-                    </div>
-                    <h3>Analyse des tendances</h3>
-                    <p>Évolution de vos performances, comparaisons mois par mois, identification de vos pics de vente</p>
+                    <p>Générez un rapport PDF professionnel du mois affiché avec toutes vos statistiques et graphiques.</p>
                     <div class="feature-value">Valeur : 97€</div>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <h3>Interface native Vinted</h3>
-                    <p>S'intègre parfaitement dans votre portefeuille Vinted comme si c'était une fonctionnalité officielle</p>
+                    <h3>Navigation facile par mois</h3>
+                    <p>Popup intuitive pour naviguer rapidement entre les différents mois et consulter vos historiques.</p>
                     <div class="feature-value">Valeur : 67€</div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>100% sécurisé et privé</h3>
-                    <p>Aucune donnée n'est collectée ou transmise - tout reste dans votre navigateur</p>
-                    <div class="feature-value">Valeur : 89€</div>
                 </div>
             </div>
 
             <div class="total-value">
-                <p>Valeur totale : <span class="old-price">822€</span></p>
+                <p>Valeur totale : <span class="old-price">733€</span></p>
                 <p>Votre prix aujourd'hui : <span class="new-price">28€</span></p>
-                <p class="savings">Vous économisez 794€ (97% de réduction)</p>
+                <p class="savings">Vous économisez 705€ (96% de réduction)</p>
             </div>
         </div>
     </section>
@@ -303,7 +414,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Enfin je peux voir mes vraies performances ! Les statistiques détaillées et les filtres m'ont permis d'identifier mes meilleures périodes de vente. L'export CSV me fait gagner des heures pour ma comptabilité."</p>
+                    <p>"Enfin je peux voir mes vraies performances ! Le sommaire financier et la recherche avancée m'ont permis d'identifier mes meilleures périodes de vente. L'export CSV me fait gagner des heures pour ma comptabilité."</p>
                     <div class="author">
                         <img src="https://i.pravatar.cc/60?img=1" alt="Sophie M.">
                         <div>
@@ -339,7 +450,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Les filtres avancés sont géniaux ! Je peux analyser mes ventes par période, voir quels types d'articles marchent le mieux... C'est comme avoir un tableau de bord pro directement dans Vinted !"</p>
+                    <p>"La recherche avancée et la catégorisation automatique sont géniales ! Je peux analyser mes ventes par période, voir quels types d'articles marchent le mieux... C'est comme avoir un tableau de bord pro directement dans Vinted !"</p>
                     <div class="author">
                         <img src="https://i.pravatar.cc/60?img=3" alt="Emma D.">
                         <div>
@@ -436,10 +547,6 @@
                                 <span>Paiement 100% sécurisé</span>
                             </div>
                             <div class="guarantee-item">
-                                <i class="fas fa-undo"></i>
-                                <span>Satisfait ou remboursé 30 jours</span>
-                            </div>
-                            <div class="guarantee-item">
                                 <i class="fas fa-download"></i>
                                 <span>Accès immédiat</span>
                             </div>
@@ -471,33 +578,33 @@
             <h2>Questions fréquentes</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3><i class="fas fa-chart-bar"></i> Quelles statistiques obtient-on exactement ?</h3>
-                    <p>Plus de 15 métriques : CA mensuel, nombre de ventes, prix moyen, bénéfices nets, évolution vs mois précédent, répartition par type d'opération, et bien plus !</p>
+                    <h3><i class="fas fa-chart-pie"></i> Que contient le sommaire financier ?</h3>
+                    <p>Le sommaire affiche vos ventes, achats, frais, retraits et le résultat net du mois. Chaque catégorie est automatiquement calculée et colorée pour une lecture rapide.</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3><i class="fas fa-filter"></i> Comment fonctionnent les filtres avancés ?</h3>
-                    <p>Vous pouvez filtrer vos opérations par période (jour, semaine, mois), type (ventes, achats, frais), montant, statut... Parfait pour analyser précisément vos performances.</p>
+                    <h3><i class="fas fa-search"></i> Comment fonctionne la recherche avancée ?</h3>
+                    <p>Utilisez le champ de recherche pour filtrer vos transactions par titre, montant, date ou type. La catégorisation automatique vous aide à identifier rapidement les différents types d'opérations.</p>
                 </div>
 
                 <div class="faq-item">
                     <h3><i class="fas fa-file-csv"></i> Que contient l'export CSV ?</h3>
-                    <p>Toutes les opérations visibles à l'écran avec leur date, type, montant, description, statut... Compatible Excel et idéal pour votre comptable.</p>
+                    <p>Toutes les transactions affichées avec leur date, type, montant, description, statut... Compatible Excel et idéal pour votre comptable.</p>
                 </div>
 
                 <div class="faq-item">
                     <h3><i class="fas fa-file-pdf"></i> À quoi ressemble le rapport PDF ?</h3>
-                    <p>Un document professionnel avec vos statistiques du mois, graphiques d'évolution, et résumé détaillé. Parfait pour vos déclarations ou votre suivi personnel.</p>
+                    <p>Un document professionnel avec votre sommaire du mois, graphiques d'évolution, et détail des transactions. Parfait pour vos déclarations ou votre suivi personnel.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-calendar-alt"></i> Comment naviguer entre les mois ?</h3>
+                    <p>Une popup intuitive vous permet de sélectionner rapidement n'importe quel mois. Le sommaire et les exports s'adaptent automatiquement à la période choisie.</p>
                 </div>
 
                 <div class="faq-item">
                     <h3><i class="fas fa-download"></i> Comment recevoir l'extension après achat ?</h3>
                     <p>Vous recevrez immédiatement un lien de téléchargement par email avec les instructions d'installation détaillées.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><i class="fas fa-undo"></i> Puis-je être remboursé si je ne suis pas satisfait ?</h3>
-                    <p>Oui, vous avez 30 jours pour demander un remboursement complet, sans justification.</p>
                 </div>
             </div>
         </div>
