@@ -1,0 +1,17 @@
+# Robots.txt pour VMSI Solutions
+# https://www.vmsi-solutions.fr/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.vmsi-solutions.fr/sitemap.xml
+
+# Fichiers à éviter
+Disallow: /js/
+Disallow: /css/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Crawl-delay (optionnel)
+Crawl-delay: 1
