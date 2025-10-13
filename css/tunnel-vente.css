@@ -1527,3 +1527,95 @@ stripe-buy-button {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+/* Animations pour les notifications */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Style pour le countdown urgent */
+.countdown.urgent {
+    animation: pulse 1s infinite;
+}
+
+.countdown.urgent .number {
+    color: var(--danger-color);
+    font-weight: 800;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Style pour l'urgence expirée */
+.urgency-box.expired {
+    background: linear-gradient(135deg, var(--danger-color), #c0392b);
+    color: white;
+}
+
+.urgency-box.expired h2,
+.urgency-box.expired p {
+    color: white;
+}
+
+/* Amélioration du bouton Stripe */
+.stripe-button-loaded {
+    transition: var(--transition-base);
+}
+
+.stripe-button-loaded:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Section prix simplifié */
+.simple-pricing {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+}
+
+.simple-pricing h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.simple-pricing p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.simple-pricing strong {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}

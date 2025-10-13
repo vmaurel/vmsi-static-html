@@ -1,9 +1,6 @@
 // Tunnel de vente - Extended Wallet - JavaScript interactif
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Configuration du countdown
-    initCountdown();
-    
     // Animations et effets visuels
     initAnimations();
     
@@ -13,88 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gestion du bouton Stripe
     initStripeIntegration();
 });
-
-// Fonction de countdown avec urgence
-function initCountdown() {
-    const countdownElement = document.getElementById('countdown');
-    if (!countdownElement) return;
-
-    // Récupération ou création de l'heure de fin
-    let endTime = localStorage.getItem('countdown_end');
-    if (!endTime) {
-        // Défini le countdown à 24 heures à partir de maintenant
-        endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
-        localStorage.setItem('countdown_end', endTime);
-    } else {
-        endTime = parseInt(endTime);
-    }
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const timeLeft = endTime - now;
-
-        if (timeLeft <= 0) {
-            // Countdown terminé - augmentation du prix
-            showPriceIncrease();
-            return;
-        }
-
-        const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        // Mise à jour de l'affichage
-        const hoursElement = document.getElementById('hours');
-        const minutesElement = document.getElementById('minutes');
-        const secondsElement = document.getElementById('seconds');
-
-        if (hoursElement) hoursElement.textContent = hours.toString().padStart(2, '0');
-        if (minutesElement) minutesElement.textContent = minutes.toString().padStart(2, '0');
-        if (secondsElement) secondsElement.textContent = seconds.toString().padStart(2, '0');
-
-        // Effet d'urgence quand il reste moins de 1 heure
-        if (timeLeft < 3600000) {
-            countdownElement.classList.add('urgent');
-        }
-    }
-
-    // Mise à jour toutes les secondes
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-}
-
-// Gestion de l'augmentation de prix
-function showPriceIncrease() {
-    // Mise à jour de tous les prix sur la page
-    const currentPrices = document.querySelectorAll('.current-price, .new-price');
-    const oldPrices = document.querySelectorAll('.old-price');
-
-    currentPrices.forEach(price => {
-        price.textContent = '28€';
-        price.style.color = '#e74c3c';
-    });
-
-    oldPrices.forEach(price => {
-        price.textContent = '733€';
-    });
-
-    // Notification d'augmentation
-    showNotification('⚠️ Le prix promotionnel a expiré. Nouveau prix : 67€', 'warning');
-    
-    // Mise à jour du texte d'urgence
-    const urgencySection = document.querySelector('.urgency');
-    if (urgencySection) {
-        urgencySection.innerHTML = `
-            <div class="container">
-                <div class="urgency-box">
-                    <h2><i class="fas fa-exclamation-triangle"></i> Prix promotionnel expiré</h2>
-                    <p>L'extension est maintenant à son prix normal de 67€</p>
-                    <p class="limited-spots">⚠️ Plus que 15 licences disponibles à ce prix</p>
-                </div>
-            </div>
-        `;
-    }
-}
 
 // Gestion de l'intégration Stripe
 function initStripeIntegration() {
@@ -108,7 +23,7 @@ function initStripeIntegration() {
             stripeButton.addEventListener('click', function() {
                 trackEvent('stripe_button_click', {
                     product: 'Extended Wallet',
-                    price: getCurrentPrice()
+                    price: '28€'
                 });
             });
             
@@ -237,8 +152,7 @@ function scrollToOrder() {
 }
 
 function getCurrentPrice() {
-    const priceElement = document.querySelector('.current-price, .new-price');
-    return priceElement ? priceElement.textContent : '28€';
+    return '28€'; // Prix fixe
 }
 
 function trackEvent(eventName, properties = {}) {
@@ -256,3 +170,8 @@ function trackEvent(eventName, properties = {}) {
 
 // Fonctions exposées globalement
 window.scrollToOrder = scrollToOrder;
+
+// Nettoyage du localStorage (supprimer les données de countdown)
+if (localStorage.getItem('countdown_end')) {
+    localStorage.removeItem('countdown_end');
+}

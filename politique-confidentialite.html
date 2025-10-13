@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Vinted Extended Wallet</title>
+    <link rel="icon" type="image/svg+xml" href="images/extended-wallet-favicon.svg">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-32.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --primary-dark: #004499;
+            --primary-light: #3385d1;
+            --secondary-color: #00d4aa;
+            --accent-color: #ff6b35;
+            --dark-color: #2d3436;
+            --gray-color: #636e72;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+            --white-color: #ffffff;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --transition-base: all 0.3s ease;
+            --shadow-base: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: var(--white-color);
+            box-shadow: var(--shadow-base);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-brand img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-base);
+        }
+
+        .back-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .content-wrapper {
+            background: var(--white-color);
+            border-radius: 16px;
+            box-shadow: var(--shadow-hover);
+            overflow: hidden;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #008874 100%);
+            color: var(--white-color);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header-section .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .version-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .privacy-highlight {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .data-protection {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .rights-info {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .contact-section {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .contact-section h2 {
+            border: none;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section {
+            background: var(--secondary-color);
+            color: var(--white-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section strong {
+            color: var(--white-color);
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--white-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-base);
+        }
+
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: var(--white-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-base);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--light-gray);
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+
+            .nav-title {
+                font-size: 1.2rem;
+            }
+
+            .header-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .header-section h1 {
+                font-size: 2rem;
+            }
+
+            .header-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/extended-wallet-logo.svg" alt="Extended Wallet Logo">
+                <span class="nav-title">Extended Wallet</span>
+            </div>
+            <a href="vinted-extended-wallet.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Retour à Extended Wallet
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="header-section">
+                <h1>POLITIQUE DE CONFIDENTIALITÉ</h1>
+                <p class="subtitle">Extension Chrome "Vinted Extended Wallet"</p>
+                <div class="version-info">
+                    <strong>Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025</strong>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="privacy-highlight">
+                    <h2><i class="fas fa-shield-alt"></i> NOTRE ENGAGEMENT POUR VOTRE CONFIDENTIALITÉ</h2>
+                    <p><strong>VMSI Solutions s'engage à protéger votre vie privée et vos données personnelles.</strong> Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations dans le cadre de l'utilisation de l'extension "Vinted Extended Wallet".</p>
+                </div>
+
+                <h2><i class="fas fa-info-circle"></i> INFORMATIONS GÉNÉRALES</h2>
+                <div class="privacy-highlight">
+                    <p><strong>Responsable du traitement :</strong> VMSI Solutions<br>
+                    <strong>Contact :</strong> support@vmsi-solutions.fr<br>
+                    <strong>Siège social :</strong> 23 E route de la descente, 05000 Gap<br>
+                    <strong>DPO :</strong> support@vmsi-solutions.fr</p>
+                </div>
+
+                <h2><i class="fas fa-database"></i> DONNÉES COLLECTÉES</h2>
+
+                <h3><i class="fas fa-check-circle"></i> Données que nous collectons</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type de donnée</th>
+                            <th>Finalité</th>
+                            <th>Base légale</th>
+                            <th>Durée de conservation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nom d'utilisateur Vinted</td>
+                            <td>Gestion des licences et authentification</td>
+                            <td>Exécution du contrat</td>
+                            <td>3 ans après fin d'abonnement</td>
+                        </tr>
+                        <tr>
+                            <td>Adresse email</td>
+                            <td>Facturation, support client, communication</td>
+                            <td>Exécution du contrat</td>
+                            <td>3 ans après fin d'abonnement</td>
+                        </tr>
+                        <tr>
+                            <td>Coordonnées de facturation</td>
+                            <td>Émission des factures, obligations légales</td>
+                            <td>Obligation légale</td>
+                            <td>10 ans (obligations comptables)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3><i class="fas fa-times-circle"></i> Données que nous NE collectons PAS</h3>
+                <div class="data-protection">
+                    <p><strong>Nous nous engageons formellement à ne JAMAIS collecter :</strong></p>
+                    <ul>
+                        <li><strong>Vos données financières personnelles</strong> (comptes bancaires, cartes de crédit, soldes)</li>
+                        <li><strong>Vos transactions Vinted</strong> (détails des ventes, achats, montants)</li>
+                        <li><strong>Votre historique de navigation</strong> sur Vinted</li>
+                        <li><strong>Vos conversations</strong> avec d'autres utilisateurs Vinted</li>
+                        <li><strong>Vos données personnelles Vinted</strong> (adresse, téléphone, etc.)</li>
+                        <li><strong>Toute autre information</strong> provenant de l'interface Vinted</li>
+                    </ul>
+                </div>
+
+                <h2><i class="fas fa-cogs"></i> TRAITEMENT DES DONNÉES</h2>
+
+                <h3><i class="fas fa-desktop"></i> Traitement local</h3>
+                <div class="privacy-highlight">
+                    <p><strong>PRINCIPE FONDAMENTAL :</strong> Toutes vos données de transactions Vinted sont traitées exclusivement et localement dans votre navigateur. Elles ne quittent jamais votre ordinateur et ne sont jamais transmises à nos serveurs.</p>
+                </div>
+
+                <h3><i class="fas fa-target"></i> Finalités du traitement</h3>
+                <p>Nous traitons vos données personnelles uniquement pour :</p>
+                <ul>
+                    <li><strong>Gestion des licences :</strong> Vérification des droits d'accès à l'extension</li>
+                    <li><strong>Facturation :</strong> Émission des factures et gestion des paiements</li>
+                    <li><strong>Support technique :</strong> Assistance et résolution des problèmes</li>
+                    <li><strong>Communication :</strong> Informations importantes sur le service</li>
+                    <li><strong>Obligations légales :</strong> Respect des obligations comptables et fiscales</li>
+                </ul>
+
+                <h3><i class="fas fa-balance-scale"></i> Base légale</h3>
+                <p>Nos traitements sont fondés sur :</p>
+                <ul>
+                    <li><strong>L'exécution du contrat :</strong> Pour fournir les services de l'extension</li>
+                    <li><strong>L'obligation légale :</strong> Pour respecter nos obligations comptables et fiscales</li>
+                    <li><strong>L'intérêt légitime :</strong> Pour améliorer nos services et assurer la sécurité</li>
+                </ul>
+
+                <h2><i class="fas fa-share-alt"></i> PARTAGE DES DONNÉES</h2>
+
+                <h3><i class="fas fa-users"></i> Destinataires</h3>
+                <p>Vos données personnelles peuvent être communiquées à :</p>
+                <ul>
+                    <li><strong>VMSI Solutions :</strong> Personnel habilité pour la gestion du service</li>
+                    <li><strong>Stripe :</strong> Processeur de paiement sécurisé (uniquement données de facturation)</li>
+                    <li><strong>Autorités compétentes :</strong> En cas d'obligation légale ou judiciaire</li>
+                </ul>
+
+                <h3><i class="fas fa-globe"></i> Transferts internationaux</h3>
+                <p>Les données peuvent être transférées vers des pays tiers dans le cadre de l'utilisation de Stripe (États-Unis). Ces transferts sont sécurisés par des garanties appropriées conformes au RGPD.</p>
+
+                <h2><i class="fas fa-lock"></i> SÉCURITÉ DES DONNÉES</h2>
+                <p>Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données :</p>
+                <ul>
+                    <li><strong>Chiffrement :</strong> Toutes les communications sont chiffrées (HTTPS/TLS)</li>
+                    <li><strong>Accès restreint :</strong> Seul le personnel autorisé a accès aux données</li>
+                    <li><strong>Surveillance :</strong> Monitoring et détection des tentatives d'intrusion</li>
+                    <li><strong>Sauvegarde :</strong> Sauvegardes régulières et sécurisées</li>
+                    <li><strong>Audits :</strong> Contrôles réguliers de sécurité</li>
+                </ul>
+
+                <h2><i class="fas fa-clock"></i> CONSERVATION DES DONNÉES</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type de donnée</th>
+                            <th>Durée de conservation</th>
+                            <th>Raison</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Données de compte</td>
+                            <td>Pendant la durée d'abonnement + 3 ans</td>
+                            <td>Gestion du service et réclamations</td>
+                        </tr>
+                        <tr>
+                            <td>Données de facturation</td>
+                            <td>10 ans</td>
+                            <td>Obligations comptables et fiscales</td>
+                        </tr>
+                        <tr>
+                            <td>Données de support</td>
+                            <td>3 ans après résolution</td>
+                            <td>Amélioration du service</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2><i class="fas fa-user-check"></i> VOS DROITS</h2>
+
+                <div class="rights-info">
+                    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+                    
+                    <h3><i class="fas fa-search"></i> Droit d'accès</h3>
+                    <p>Vous pouvez demander l'accès à vos données personnelles que nous détenons.</p>
+                    
+                    <h3><i class="fas fa-edit"></i> Droit de rectification</h3>
+                    <p>Vous pouvez demander la correction de données inexactes ou incomplètes.</p>
+                    
+                    <h3><i class="fas fa-trash"></i> Droit à l'effacement</h3>
+                    <p>Vous pouvez demander la suppression de vos données dans certains cas.</p>
+                    
+                    <h3><i class="fas fa-pause"></i> Droit à la limitation</h3>
+                    <p>Vous pouvez demander la limitation du traitement de vos données.</p>
+                    
+                    <h3><i class="fas fa-download"></i> Droit à la portabilité</h3>
+                    <p>Vous pouvez récupérer vos données dans un format structuré.</p>
+                    
+                    <h3><i class="fas fa-ban"></i> Droit d'opposition</h3>
+                    <p>Vous pouvez vous opposer au traitement de vos données dans certains cas.</p>
+                    
+                    <h3><i class="fas fa-undo"></i> Droit de retrait du consentement</h3>
+                    <p>Vous pouvez retirer votre consentement à tout moment quand il est la base du traitement.</p>
+                </div>
+
+                <h3><i class="fas fa-paper-plane"></i> Exercice de vos droits</h3>
+                <p>Pour exercer vos droits, contactez-nous à : <strong>support@vmsi-solutions.fr</strong></p>
+                <p>Nous répondrons à votre demande dans un délai maximum de <strong>30 jours</strong>.</p>
+
+                <h3><i class="fas fa-exclamation-circle"></i> Réclamation</h3>
+                <p>Vous avez le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) si vous estimez que le traitement de vos données personnelles constitue une violation du RGPD.</p>
+                <p><strong>CNIL :</strong> 3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07</p>
+                <p><strong>Site web :</strong> <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
+
+                <h2><i class="fas fa-cookie-bite"></i> COOKIES ET TECHNOLOGIES SIMILAIRES</h2>
+                <p>Notre extension n'utilise aucun cookie de tracking ou de publicité. Les seules données stockées localement sont :</p>
+                <ul>
+                    <li><strong>Préférences utilisateur :</strong> Paramètres d'affichage et configuration de l'extension</li>
+                    <li><strong>Cache temporaire :</strong> Données techniques nécessaires au fonctionnement de l'extension</li>
+                    <li><strong>Licence d'activation :</strong> Informations d'authentification pour vérifier vos droits d'usage</li>
+                </ul>
+                <p>Ces données restent entièrement sur votre appareil et ne sont jamais transmises à des tiers.</p>
+
+                <h2><i class="fas fa-child"></i> ENFANTS</h2>
+                <p>Notre service ne s'adresse pas aux personnes âgées de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles d'enfants de moins de 16 ans.</p>
+                <p>Si vous êtes parent ou tuteur et que vous pensez que votre enfant nous a fourni des données personnelles, contactez-nous immédiatement.</p>
+
+                <h2><i class="fas fa-sync-alt"></i> MODIFICATIONS DE CETTE POLITIQUE</h2>
+                <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en :</p>
+                <ul>
+                    <li>Publiant la nouvelle politique sur cette page</li>
+                    <li>Affichant une notification dans l'extension</li>
+                    <li>Vous envoyant un email si les modifications sont importantes</li>
+                </ul>
+                <p>Cette politique est effective à compter de la date indiquée en haut de cette page.</p>
+
+                <h2><i class="fas fa-gavel"></i> LÉGISLATION APPLICABLE</h2>
+                <p>Cette politique de confidentialité est régie par le droit français et notamment :</p>
+                <ul>
+                    <li>Le Règlement Général sur la Protection des Données (RGPD)</li>
+                    <li>La loi Informatique et Libertés modifiée</li>
+                    <li>Le Code de la consommation</li>
+                </ul>
+
+                <div class="contact-section">
+                    <h2><i class="fas fa-envelope"></i> NOUS CONTACTER</h2>
+                    <p>Pour toute question concernant cette politique de confidentialité ou le traitement de vos données personnelles, vous pouvez nous contacter :</p>
+                    <p><strong>Email :</strong> support@vmsi-solutions.fr<br>
+                    <strong>Objet :</strong> [Confidentialité / Protection des données / RGPD]<br>
+                    <strong>Adresse postale :</strong> VMSI Solutions - 23 E route de la descente - 05000 Gap</p>
+                    <p><strong>Délégué à la Protection des Données (DPO) :</strong> support@vmsi-solutions.fr</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <p><strong>En utilisant l'extension "Vinted Extended Wallet", vous reconnaissez avoir lu, compris et accepté intégralement cette Politique de Confidentialité.</strong></p>
+                
+                <div class="footer-links">
+                    <a href="vinted-extended-wallet.html">Extended Wallet</a>
+                    <a href="vinted-extended-wallet-cgu.html">Conditions d'utilisation</a>
+                    <a href="index.html">Accueil VMSI</a>
+                </div>
+                
+                <p>Dernière mise à jour : 13 octobre 2025</p>
+                <p>© 2025 VMSI Solutions - Tous droits réservés</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

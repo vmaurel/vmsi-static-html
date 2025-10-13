@@ -50,7 +50,7 @@ Extended Wallet transforme le portefeuille Vinted basique en tableau de bord pro
 ### Page dédiée
 - **URL** : `vinted-extended-wallet.html`
 - **Design** : Landing page optimisée pour la conversion
-- **Paiement** : Intégration Stripe Buy Button (28€ paiement unique)
+- **Paiement** : Intégration Stripe Buy Button (28€ Abonnement annuel)
 - **Sections** : Hero, problème/solution, fonctionnalités, témoignages, FAQ
 
 ## �🎨 Personnalisation des couleurs
@@ -164,7 +164,7 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 
 ### Extended Wallet
 - **500+ utilisateurs actifs**
-- **Tarif** : 28€ (paiement unique)
+- **Tarif** : 28€ (Abonnement annuel)
 - **Valeur totale** : 822€ de fonctionnalités
 - **Économie** : 97% de réduction
 

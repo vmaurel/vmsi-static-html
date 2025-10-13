@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation - Vinted Extended Wallet</title>
+    <link rel="icon" type="image/svg+xml" href="images/extended-wallet-favicon.svg">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-32.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --primary-dark: #004499;
+            --primary-light: #3385d1;
+            --secondary-color: #00d4aa;
+            --accent-color: #ff6b35;
+            --dark-color: #2d3436;
+            --gray-color: #636e72;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+            --white-color: #ffffff;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --transition-base: all 0.3s ease;
+            --shadow-base: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: var(--white-color);
+            box-shadow: var(--shadow-base);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-brand img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-base);
+        }
+
+        .back-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .content-wrapper {
+            background: var(--white-color);
+            border-radius: 16px;
+            box-shadow: var(--shadow-hover);
+            overflow: hidden;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white-color);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header-section .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .version-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .important-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .warning-box {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #e74c3c;
+            font-weight: 500;
+        }
+
+        .contact-section {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .contact-section h2 {
+            border: none;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section {
+            background: var(--primary-color);
+            color: var(--white-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section strong {
+            color: var(--white-color);
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--white-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-base);
+        }
+
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+
+            .nav-title {
+                font-size: 1.2rem;
+            }
+
+            .header-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .header-section h1 {
+                font-size: 2rem;
+            }
+
+            .header-section .subtitle {
+                font-size: 1rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/extended-wallet-logo.svg" alt="Extended Wallet Logo">
+                <span class="nav-title">Extended Wallet</span>
+            </div>
+            <a href="vinted-extended-wallet.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Retour à Extended Wallet
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="header-section">
+                <h1>CONDITIONS GÉNÉRALES D'UTILISATION</h1>
+                <p class="subtitle">Extension Chrome "Vinted Extended Wallet"</p>
+                <div class="version-info">
+                    <strong>Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025</strong>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <h2><i class="fas fa-info-circle"></i> INFORMATIONS LÉGALES</h2>
+                <div class="highlight-box">
+                    <p><strong>Éditeur :</strong> VMSI Solutions<br>
+                    <strong>Contact :</strong> support@vmsi-solutions.fr<br>
+                    <strong>Siège social :</strong> 23 E route de la descente, 05000 Gap<br>
+                    <strong>Responsable publication :</strong> Vincent Maurel</p>
+                </div>
+
+                <h2><i class="fas fa-file-alt"></i> OBJET ET DESCRIPTION DU SERVICE</h2>
+                <p>Les présentes conditions générales d'utilisation (ci-après "CGU") régissent l'utilisation de l'extension Chrome "Vinted Extended Wallet" (ci-après "l'Extension") développée et éditée par VMSI Solutions.</p>
+                
+                <p>L'Extension permet aux utilisateurs d'extraire, analyser et exporter leurs données de portefeuille Vinted sous forme de rapports PDF et CSV, ainsi que de visualiser des statistiques détaillées de leurs transactions.</p>
+
+                <h2><i class="fas fa-check-circle"></i> ACCEPTATION DES CONDITIONS</h2>
+                <p>L'installation, l'activation ou l'utilisation de l'Extension implique l'acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas l'ensemble de ces conditions, vous devez immédiatement cesser d'utiliser l'Extension et procéder à sa désinstallation.</p>
+
+                <h2><i class="fas fa-cogs"></i> FONCTIONNALITÉS DE L'EXTENSION</h2>
+                <p>L'Extension offre les fonctionnalités suivantes :</p>
+                <ul>
+                    <li>Extraction et analyse des données de transactions du portefeuille Vinted</li>
+                    <li>Génération de rapports PDF professionnels avec statistiques détaillées</li>
+                    <li>Export des données au format CSV</li>
+                    <li>Filtrage et recherche avancée dans l'historique des transactions</li>
+                    <li>Statistiques et analyses visuelles des performances de vente</li>
+                </ul>
+
+                <h2><i class="fas fa-euro-sign"></i> LICENCE ET TARIFICATION</h2>
+                
+                <h3>5.1 Période d'essai</h3>
+                <p>Une période d'essai gratuite de 15 jours est accordée à tout nouvel utilisateur.</p>
+
+                <h3>5.2 Licence payante</h3>
+                <p>Après la période d'essai, l'utilisation de l'Extension nécessite l'acquisition d'une licence annuelle au tarif de <strong>28 euros TTC</strong>, renouvelable tacitement.</p>
+
+                <h3>5.3 Paiement</h3>
+                <p>Les paiements sont traités de manière sécurisée par Stripe. L'utilisateur s'engage à fournir des informations de paiement exactes et à jour.</p>
+
+                <h3>5.4 Renouvellement</h3>
+                <p>Sauf résiliation avant l'échéance, la licence se renouvelle automatiquement pour une période d'un an au même tarif.</p>
+
+                <h2><i class="fas fa-shield-alt"></i> DONNÉES COLLECTÉES ET TRAITEMENT</h2>
+
+                <h3>6.1 Données collectées par VMSI Solutions</h3>
+                <p>VMSI Solutions collecte et traite uniquement :</p>
+                <ul>
+                    <li>Votre nom d'utilisateur Vinted (pour la gestion des licences)</li>
+                    <li>Votre adresse email et coordonnées de facturation (pour la facturation et le support)</li>
+                </ul>
+
+                <h3>6.2 Données NON collectées</h3>
+                <div class="important-box">
+                    <p><strong>VMSI Solutions s'engage formellement à ne JAMAIS collecter, traiter ou transmettre :</strong></p>
+                    <ul>
+                        <li>Vos données financières personnelles</li>
+                        <li>Les détails de vos transactions Vinted</li>
+                        <li>Le contenu ou les montants de vos opérations</li>
+                        <li>Toute autre donnée provenant de l'interface Vinted</li>
+                    </ul>
+                </div>
+
+                <h3>6.3 Traitement local</h3>
+                <p>L'intégralité du traitement des données de transactions s'effectue localement dans votre navigateur. Aucune donnée de transaction n'est transmise aux serveurs de VMSI Solutions.</p>
+
+                <h3>6.4 Conservation des données</h3>
+                <p>Les données personnelles collectées sont conservées pendant <strong>3 ans</strong> à compter de la fin de votre abonnement, puis automatiquement supprimées.</p>
+
+                <h2><i class="fas fa-key"></i> DROITS ET RESTRICTIONS D'UTILISATION</h2>
+
+                <h3>7.1 Octroi de licence</h3>
+                <p>VMSI Solutions vous accorde une licence personnelle valable pour un seul et unique compte Vinted, non transférable et révocable d'utilisation de l'Extension.</p>
+
+                <h3>7.2 Utilisation autorisée</h3>
+                <p>L'Extension peut être utilisée dans un cadre personnel ou professionnel, sous réserve du respect des présentes CGU.</p>
+
+                <h3>7.3 Restrictions</h3>
+                <p>Il est formellement interdit de :</p>
+                <ul>
+                    <li>Modifier, décompiler, procéder à l'ingénierie inverse ou tenter d'extraire le code source de l'Extension</li>
+                    <li>Utiliser l'Extension à des fins illégales ou contraires à l'ordre public</li>
+                    <li>Revendre, redistribuer ou concéder en sous-licence l'Extension</li>
+                    <li>Contourner les mesures techniques de protection</li>
+                    <li>Utiliser l'Extension de manière à porter atteinte aux droits de Vinted ou de tiers</li>
+                </ul>
+
+                <h2><i class="fas fa-exclamation-triangle"></i> RESPONSABILITÉS ET LIMITATIONS</h2>
+
+                <h3>8.1 Limitation de responsabilité</h3>
+                <p>VMSI Solutions décline expressément toute responsabilité concernant :</p>
+                <ul>
+                    <li>L'utilisation de l'Extension par l'utilisateur</li>
+                    <li>Les décisions prises sur la base des fichiers générés par l'Extension</li>
+                    <li>Les conséquences de l'exploitation des données extraites</li>
+                    <li>Les dommages directs ou indirects résultant de l'utilisation de l'Extension</li>
+                </ul>
+
+                <h3>8.2 Valeur des données</h3>
+                <div class="warning-box">
+                    <p><strong>IMPORTANT :</strong> Les données produites par l'Extension n'ont aucune valeur comptable, fiscale ou juridique officielle. Elles ne peuvent en aucun cas être utilisées comme justificatifs comptables, fiscaux ou légaux officiels. L'utilisateur demeure seul responsable de la vérification et de la validation de ses données auprès des sources officielles.</p>
+                </div>
+
+                <h3>8.3 Disponibilité du service</h3>
+                <p>L'Extension peut devenir temporairement non fonctionnelle en cas de modification de la structure des pages web de Vinted. VMSI Solutions s'engage à déployer un correctif dans un délai maximum de <strong>15 jours calendaires</strong> suivant la prise de connaissance d'un tel dysfonctionnement.</p>
+
+                <h2><i class="fas fa-headset"></i> SUPPORT TECHNIQUE</h2>
+                <p>Un support technique est disponible par email à l'adresse : <strong>support@vmsi-solutions.fr</strong></p>
+                <p>VMSI Solutions s'efforce de répondre dans les meilleurs délais aux demandes de support, sans toutefois s'engager sur un délai de réponse spécifique.</p>
+
+                <h2><i class="fas fa-copyright"></i> PROPRIÉTÉ INTELLECTUELLE</h2>
+                <p>L'Extension, incluant son code source, son interface, ses algorithmes et sa documentation, constitue une œuvre protégée par les droits de propriété intellectuelle. Tous les droits sont réservés à VMSI Solutions.</p>
+
+                <h2><i class="fas fa-user-shield"></i> DONNÉES PERSONNELLES ET RGPD</h2>
+                <p>Le traitement de vos données personnelles est effectué en conformité avec le Règlement Général sur la Protection des Données (RGPD) et la loi française "Informatique et Libertés".</p>
+                <p>Vous disposez des droits d'accès, de rectification, d'effacement, de portabilité, de limitation du traitement et d'opposition. Pour exercer ces droits, contactez-nous à : support@vmsi-solutions.fr</p>
+
+                <h2><i class="fas fa-times-circle"></i> RÉSILIATION</h2>
+
+                <h3>12.1 Résiliation par l'utilisateur</h3>
+                <p>L'utilisateur peut résilier son abonnement à tout moment en contactant le support technique. La résiliation prend effet à la fin de la période de facturation en cours.</p>
+
+                <h3>12.2 Résiliation par VMSI Solutions</h3>
+                <p>VMSI Solutions se réserve le droit de suspendre ou résilier immédiatement l'accès à l'Extension en cas de :</p>
+                <ul>
+                    <li>Non-respect des présentes CGU</li>
+                    <li>Non-paiement des sommes dues</li>
+                    <li>Utilisation frauduleuse ou abusive de l'Extension</li>
+                </ul>
+
+                <h2><i class="fas fa-edit"></i> MODIFICATIONS DES CGU</h2>
+                <p>VMSI Solutions se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entrent en vigueur dès leur publication. L'utilisateur sera informé des modifications lors de la mise à jour de l'Extension. La poursuite de l'utilisation après modification vaut acceptation des nouvelles conditions.</p>
+
+                <h2><i class="fas fa-gavel"></i> DROIT APPLICABLE ET JURIDICTION</h2>
+                <p>Les présentes CGU sont régies par le droit français.</p>
+                <p><strong>EN CAS DE LITIGE</strong>, et après échec de toute tentative de résolution amiable, <strong>LES TRIBUNAUX FRANÇAIS SERONT SEULS COMPÉTENTS</strong>, quel que soit le lieu d'exécution ou le domicile du défendeur.</p>
+
+                <div class="contact-section">
+                    <h2><i class="fas fa-envelope"></i> CONTACT ET RÉCLAMATIONS</h2>
+                    <p>Pour toute question, réclamation ou demande relative aux présentes CGU ou à l'utilisation de l'Extension, vous pouvez nous contacter à :</p>
+                    <p><strong>Email :</strong> support@vmsi-solutions.fr<br>
+                    <strong>Objet :</strong> [Préciser : CGU / Support technique / Réclamation]<br>
+                    <strong>Adresse :</strong> VMSI Solutions - 23 E route de la descente - 05000 Gap</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <p><strong>En installant et utilisant l'Extension "Vinted Extended Wallet", vous reconnaissez avoir lu, compris et accepté intégralement les présentes Conditions Générales d'Utilisation.</strong></p>
+                
+                <div class="footer-links">
+                    <a href="vinted-extended-wallet.html">Extended Wallet</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                    <a href="index.html">Accueil VMSI</a>
+                </div>
+                
+                <p>Dernière mise à jour : 13 octobre 2025</p>
+                <p>© 2025 VMSI Solutions - Tous droits réservés</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
