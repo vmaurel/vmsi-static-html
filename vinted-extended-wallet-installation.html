@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Vinted Extended Wallet - Guide étape par étape | VMSI</title>
+    <meta name="description" content="Guide complet pour installer et configurer l'extension Vinted Extended Wallet sur Chrome. Installation depuis le Chrome Web Store, épinglage et activation de votre licence.">
+    <meta name="keywords" content="extended wallet, installation, chrome extension, guide, tutoriel, webstore">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vmsi-solutions.fr/extended-wallet-installation.html">
+    <meta property="og:title" content="Installation Vinted Extended Wallet - Guide complet">
+    <meta property="og:description" content="Apprenez à installer et configurer Vinted Extended Wallet en 4 étapes simples">
+    <meta property="og:image" content="https://www.vmsi-solutions.fr/images/extended-wallet-installation-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/extended-wallet-favicon.svg">
+    <link rel="icon" type="image/png" href="images/extended-wallet-favicon-32.png" sizes="32x32">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tunnel-vente.css">
+
+    <style>
+        /* Navigation moderne */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-brand .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(0, 102, 204, 0.1);
+            color: #0066cc;
+        }
+
+        .nav-links a.active {
+            background: #0066cc;
+            color: white;
+        }
+
+        /* Hero Section amélioré */
+        .installation-guide {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #0066cc 0%, #00d4aa 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .installation-guide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.15)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-header {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .installation-guide h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .installation-guide h1 i {
+            color: #00d4aa;
+            margin-right: 15px;
+        }
+
+        .installation-guide .subtitle {
+            font-size: 1.3rem;
+            text-align: center;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .quick-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00d4aa;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        /* Navigation breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .breadcrumb-list a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .breadcrumb-list a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-separator {
+            color: #ccc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+
+            .installation-guide {
+                padding: 100px 0 60px;
+            }
+
+            .installation-guide h1 {
+                font-size: 2.2rem;
+            }
+
+            .installation-guide .subtitle {
+                font-size: 1.1rem;
+                padding: 0 10px;
+            }
+
+            .quick-stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .breadcrumb-list {
+                font-size: 0.8rem;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+
+        .steps-container {
+            padding: 80px 0;
+        }
+
+        .step {
+            margin-bottom: 80px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .step-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .step-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .step-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--dark-color);
+        }
+
+        .step-text p {
+            margin-bottom: 1rem;
+        }
+
+        .step-text .highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+
+        .step-image {
+            text-align: center;
+        }
+
+        .step-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .placeholder-image {
+            background: linear-gradient(135deg, #f8f9ff, #e9ecef);
+            border: 2px dashed #667eea;
+            border-radius: 15px;
+            padding: 60px 20px;
+            text-align: center;
+            color: #667eea;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .placeholder-image i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .important-note {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .important-note i {
+            color: #856404;
+            margin-right: 10px;
+        }
+
+        .success-section {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .success-section h2 {
+            color: #155724;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-section p {
+            color: #155724;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .step-content {
+                grid-template-columns: 1fr;
+            }
+
+            .step-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .installation-guide h1 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/vmsi-logo.svg" alt="VMSI Solutions" class="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="vinted-extended-wallet.html">Vinted Extended Wallet</a>
+                <a href="extended-wallet-installation.html" class="active">Installation</a>
+                <a href="mailto:support@vmsi-solutions.fr">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="installation-guide">
+        <div class="container">
+            <div class="hero-header">
+                <div class="hero-badge">
+                    <i class="fab fa-chrome"></i>
+                    Guide d'installation
+                </div>
+                <h1><i class="fas fa-download"></i>Installation Vinted Extended Wallet</h1>
+                <p class="subtitle">
+                    Suivez ces 4 étapes simples pour installer et configurer votre extension Vinted Extended Wallet. 
+                    Le processus prend moins de 5 minutes et vous serez opérationnel immédiatement !
+                </p>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <div class="stat-label">Étapes faciles</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5min</span>
+                        <div class="stat-label">Installation</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <div class="stat-label">Sécurisé</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb-separator">›</span>
+                <a href="vinted-extended-wallet.html">Vinted Extended Wallet</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Installation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps-container">
+        <div class="container">
+
+            <!-- Étape 1: Chrome Web Store -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <h2 class="step-title">Accéder au Chrome Web Store</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Rendez-vous sur la page officielle d'Vinted Extended Wallet dans le <span class="highlight">Chrome Web Store</span>.</p>
+                        <p>Cette étape garantit que vous téléchargez la version officielle et sécurisée de l'extension directement depuis Google.</p>
+                        
+                        <div class="important-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <strong>Important :</strong> N'installez Vinted Extended Wallet que depuis le Chrome Web Store officiel pour votre sécurité.
+                        </div>
+
+                        <p>Cliquez sur le bouton <strong>"Ajouter à Chrome"</strong> pour commencer l'installation.</p>
+                    </div>
+                    <div class="step-image">
+                        <div class="placeholder-image">
+                            <i class="fab fa-chrome"></i>
+                            <div>Capture d'écran du Chrome Web Store</div>
+                            <div>Page Vinted Extended Wallet avec bouton "Ajouter à Chrome"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 2: Installation -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <h2 class="step-title">Installer l'extension</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-download"></i>
+                            <div>Popup de confirmation Chrome</div>
+                            <div>"Ajouter Vinted Extended Wallet ?"</div>
+                        </div>
+                    </div>
+                    <div class="step-text">
+                        <p>Chrome vous demandera de confirmer l'installation. Cliquez sur <span class="highlight">"Ajouter l'extension"</span> dans la popup qui apparaît.</p>
+                        <p>L'extension se télécharge et s'installe automatiquement. Vous verrez une notification de confirmation une fois l'installation terminée.</p>
+                        
+                        <div class="important-note">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>À savoir :</strong> L'extension demande l'autorisation d'accéder aux pages Vinted pour fonctionner correctement.
+                        </div>
+
+                        <p>L'icône Vinted Extended Wallet apparaîtra dans votre barre d'extensions Chrome.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 3: Épingler -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <h2 class="step-title">Épingler l'extension</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Pour faciliter l'accès à Vinted Extended Wallet, <span class="highlight">épinglez l'extension</span> dans votre barre d'outils Chrome.</p>
+                        <p>Cliquez sur l'icône des extensions (puzzle) dans Chrome, puis sur l'icône d'épingle à côté de Vinted Extended Wallet.</p>
+                        
+                        <div class="important-note">
+                            <i class="fas fa-thumbtack"></i>
+                            <strong>Recommandé :</strong> Épingler l'extension vous permet d'y accéder rapidement depuis n'importe quelle page Vinted.
+                        </div>
+
+                        <p>L'icône Extended Wallet sera maintenant toujours visible dans votre barre d'outils.</p>
+                    </div>
+                    <div class="step-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-thumbtack"></i>
+                            <div>Menu des extensions Chrome</div>
+                            <div>Épinglage d'Extended Wallet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 4: Licence -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <h2 class="step-title">Activer votre licence</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-key"></i>
+                            <div>Interface d'activation Extended Wallet</div>
+                            <div>Champ de saisie de la clé de licence</div>
+                        </div>
+                    </div>
+                    <div class="step-text">
+                        <p>Cliquez sur l'icône Extended Wallet dans votre barre d'outils pour ouvrir le panneau de configuration.</p>
+                        <p>Saisissez la <span class="highlight">clé de licence</span> que vous avez reçue par email après votre achat.</p>
+                        
+                        <div class="important-note">
+                            <i class="fas fa-envelope"></i>
+                            <strong>Clé de licence :</strong> Vous l'avez reçue par email immédiatement après votre paiement. Vérifiez aussi vos spams.
+                        </div>
+
+                        <p>Cliquez sur <strong>"Activer"</strong> et c'est terminé ! Extended Wallet est maintenant prêt à transformer votre porte-monnaie Vinted.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section de succès -->
+            <div class="success-section">
+                <h2><i class="fas fa-check-circle"></i> Félicitations !</h2>
+                <p>Extended Wallet est maintenant installé et activé. Rendez-vous sur votre porte-monnaie Vinted pour découvrir toutes les nouvelles fonctionnalités !</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://vinted.fr/wallet/history" class="btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ouvrir mon porte-monnaie Vinted
+                    </a>
+                    <a href="mailto:support@vmsi-solutions.fr" class="btn-secondary">
+                        <i class="fas fa-life-ring"></i>
+                        Besoin d'aide ?
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ rapide -->
+    <section class="faq" style="padding: 60px 0;">
+        <div class="container">
+            <h2>Questions d'installation fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Je ne trouve pas l'extension dans le Web Store</h3>
+                    <p>Recherchez "Extended Wallet VMSI" ou utilisez le lien direct fourni dans votre email de confirmation d'achat.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-key"></i> J'ai perdu ma clé de licence</h3>
+                    <p>Contactez-nous à support@vmsi-solutions.fr avec votre email d'achat. Nous vous renverrons votre clé immédiatement.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-exclamation-triangle"></i> L'extension ne s'affiche pas sur Vinted</h3>
+                    <p>Vérifiez que l'extension est bien activée et que vous êtes sur vinted.fr/wallet/history. Rechargez la page si nécessaire.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Extended Wallet fonctionne-t-il sur mobile ?</h3>
+                    <p>Extended Wallet est une extension Chrome desktop uniquement. Elle ne fonctionne pas sur l'application mobile Vinted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-tunnel">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/vmsi-logo.svg" alt="VMSI Solutions">
+                    <p>Solutions innovantes de développement logiciel</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="vinted-extended-wallet.html">Extended Wallet</a>
+                    <a href="vinted-extended-wallet-cgu.html">Conditions d'utilisation</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                    <a href="mailto:support@vmsi-solutions.fr">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VMSI Solutions. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/tunnel-vente.js"></script>
+</body>
+</html>

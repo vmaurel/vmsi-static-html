@@ -37,14 +37,14 @@ vmsi-static-html/
 ## � Extended Wallet - Extension Chrome
 
 ### Présentation
-Extended Wallet transforme le portefeuille Vinted basique en tableau de bord professionnel avec statistiques détaillées et exports.
+Extended Wallet transforme le porte-monnaie Vinted basique en tableau de bord professionnel avec statistiques détaillées et exports.
 
 ### Fonctionnalités principales
 - **15+ statistiques en temps réel** : CA mensuel, nombre de ventes, prix moyen, bénéfices nets, évolution
 - **Filtres avancés** : Par période, type d'opération, montant, statut
 - **Export CSV** : Toutes les opérations affichées à l'écran
 - **Rapport PDF mensuel** : Document professionnel avec statistiques et graphiques
-- **Interface native** : Intégration parfaite dans le portefeuille Vinted
+- **Interface native** : Intégration parfaite dans le porte-monnaie Vinted
 - **100% sécurisé** : Aucune donnée collectée, tout reste local
 
 ### Page dédiée
