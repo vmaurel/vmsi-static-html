@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Internationalisation VMSI</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .language-selector { padding: 10px; margin: 20px 0; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        select { padding: 8px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Test du système d'internationalisation VMSI</h1>
+    
+    <div>
+        <label for="language-selector">Choisir une langue:</label>
+        <select id="language-selector" class="language-selector">
+            <option value="fr">🇫🇷 Français</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="es">🇪🇸 Español</option>
+        </select>
+    </div>
+
+    <div class="test-section">
+        <h2 data-i18n="hero.title">Solutions Innovantes de Développement Logiciel</h2>
+        <p data-i18n="hero.subtitle">Transformez vos idées en applications web et mobile performantes avec VMSI.</p>
+        <button data-i18n="hero.cta1">Découvrir nos services</button>
+    </div>
+
+    <div class="test-section">
+        <h3 data-i18n="services.title">Nos Services</h3>
+        <p data-i18n="services.subtitle">Des solutions techniques adaptées à vos besoins</p>
+        
+        <h4 data-i18n="services.web.title">Développement Web</h4>
+        <p data-i18n="services.web.description">Applications web modernes et performantes</p>
+    </div>
+
+    <div class="test-section">
+        <h3 data-i18n="contact.title">Contactez-nous</h3>
+        <p data-i18n="contact.subtitle">Prêt à démarrer votre projet ? Parlons-en !</p>
+        
+        <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Votre nom">
+        <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Votre email">
+    </div>
+
+    <div class="test-section">
+        <h3>Langue détectée:</h3>
+        <p id="detected-lang">Chargement...</p>
+        
+        <h3>Langues supportées:</h3>
+        <p id="supported-langs">Chargement...</p>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script>
+        // Test du système i18n
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('detected-lang').textContent = window.i18n.getCurrentLanguage();
+                document.getElementById('supported-langs').textContent = window.i18n.getSupportedLanguages().join(', ');
+            }, 1000);
+        });
+
+        // Écouter les changements de langue
+        window.addEventListener('languageChanged', (e) => {
+            console.log('Langue changée vers:', e.detail.language);
+            document.getElementById('detected-lang').textContent = e.detail.language;
+        });
+    </script>
+</body>
+</html>

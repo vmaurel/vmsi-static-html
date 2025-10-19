@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "lang": "es",
+    "title": "VMSI - Desarrollo de Software y Servicios Informáticos",
+    "description": "VMSI - Empresa de desarrollo de software y servicios informáticos. Especializada en desarrollo web y móvil con .NET, React, React Native y Node.js",
+    "keywords": "desarrollo web, desarrollo móvil, React, React Native, Node.js, .NET, servicios informáticos, VMSI"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "extendedWallet": "Vinted Extended Wallet",
+    "contact": "Contacto",
+    "installation": "Instalación",
+    "support": "Soporte"
+  },
+  "hero": {
+    "title": "Soluciones <span class=\"highlight\">Innovadoras</span> de Desarrollo de Software",
+    "subtitle": "Transforma tus ideas en aplicaciones web y móviles de alto rendimiento con VMSI. Experiencia en React, React Native, .NET y Node.js.",
+    "cta1": "Descubrir nuestros servicios",
+    "cta2": "Contáctanos"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones técnicas adaptadas a sus necesidades",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Aplicaciones web modernas y de alto rendimiento con React y Node.js. Interfaz de usuario intuitiva y experiencia óptima."
+    },
+    "mobile": {
+      "title": "Desarrollo Móvil",
+      "description": "Aplicaciones móviles multiplataforma con React Native. Una base de código para iOS y Android."
+    },
+    "backend": {
+      "title": "Soluciones Backend",
+      "description": "Arquitecturas robustas y escalables con .NET y Node.js. Bases de datos optimizadas y seguridad mejorada."
+    },
+    "consulting": {
+      "title": "Consultoría y Experiencia",
+      "description": "Acompañamiento técnico y estratégico para sus proyectos. Auditoría de código, optimización y formación."
+    }
+  },
+  "about": {
+    "title": "Acerca de VMSI",
+    "description1": "VMSI es una empresa especializada en el desarrollo de soluciones de software innovadoras, fundada por Vincent Maurel, un desarrollador apasionado con profunda experiencia en tecnologías modernas.",
+    "description2": "Nuestra misión es transformar sus ideas en aplicaciones de alto rendimiento y escalables, utilizando las últimas tecnologías del mercado: React, React Native, .NET y Node.js.",
+    "stats": {
+      "experience": "Años de experiencia",
+      "projects": "Proyectos completados",
+      "satisfaction": "Clientes satisfechos"
+    },
+    "founder": "Fundador y Desarrollador"
+  },
+  "extendedWallet": {
+    "title": "Vinted Extended Wallet",
+    "subtitle": "Extensión de Chrome que transforma tu monedero de Vinted con funciones profesionales",
+    "description": "Análisis avanzados y exportaciones profesionales para Vinted",
+    "longDescription": "Extended Wallet se integra nativamente en tu monedero de Vinted para agregar un resumen financiero detallado, categorización automática de transacciones, herramientas de búsqueda avanzada y exportaciones profesionales CSV/PDF. ¡Descubre tu verdadero rendimiento de ventas con estadísticas precisas!",
+    "price": "Suscripción anual",
+    "cta": "Descubrir Extended Wallet"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Listo para comenzar tu proyecto? ¡Hablemos!",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "subject": "Asunto",
+      "message": "Tu mensaje",
+      "send": "Enviar mensaje"
+    }
+  },
+  "footer": {
+    "description": "Soluciones innovadoras de desarrollo de software",
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "rights": "Todos los derechos reservados."
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "es": "Español"
+  }
+}

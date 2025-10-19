@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "VMSI - Softwareentwicklung und IT-Dienstleistungen",
+    "description": "VMSI - Unternehmen für Softwareentwicklung und IT-Dienstleistungen. Spezialisiert auf Web- und Mobile-Entwicklung mit .NET, React, React Native und Node.js",
+    "keywords": "Webentwicklung, mobile Entwicklung, React, React Native, Node.js, .NET, IT-Dienstleistungen, VMSI"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "extendedWallet": "Vinted Extended Wallet",
+    "contact": "Kontakt",
+    "installation": "Installation",
+    "support": "Support"
+  },
+  "hero": {
+    "title": "<span class=\"highlight\">Innovative</span> Softwareentwicklungslösungen",
+    "subtitle": "Verwandeln Sie Ihre Ideen in leistungsstarke Web- und Mobile-Anwendungen mit VMSI. Expertise in React, React Native, .NET und Node.js.",
+    "cta1": "Unsere Dienstleistungen entdecken",
+    "cta2": "Kontaktieren Sie uns"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Technische Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind",
+    "web": {
+      "title": "Webentwicklung",
+      "description": "Moderne und leistungsstarke Webanwendungen mit React und Node.js. Intuitive Benutzeroberfläche und optimale Erfahrung."
+    },
+    "mobile": {
+      "title": "Mobile Entwicklung",
+      "description": "Plattformübergreifende mobile Anwendungen mit React Native. Eine Codebasis für iOS und Android."
+    },
+    "backend": {
+      "title": "Backend-Lösungen",
+      "description": "Robuste und skalierbare Architekturen mit .NET und Node.js. Optimierte Datenbanken und verbesserte Sicherheit."
+    },
+    "consulting": {
+      "title": "Beratung & Expertise",
+      "description": "Technische und strategische Unterstützung für Ihre Projekte. Code-Audit, Optimierung und Schulung."
+    }
+  },
+  "about": {
+    "title": "Über VMSI",
+    "description1": "VMSI ist ein Unternehmen, das sich auf die Entwicklung innovativer Softwarelösungen spezialisiert hat, gegründet von Vincent Maurel, einem leidenschaftlichen Entwickler mit tiefgreifender Expertise in modernen Technologien.",
+    "description2": "Unsere Mission ist es, Ihre Ideen in leistungsstarke und skalierbare Anwendungen zu verwandeln, unter Verwendung der neuesten Markttechnologien: React, React Native, .NET und Node.js.",
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "satisfaction": "Zufriedene Kunden"
+    },
+    "founder": "Gründer & Entwickler"
+  },
+  "extendedWallet": {
+    "title": "Vinted Extended Wallet",
+    "subtitle": "Chrome-Erweiterung, die Ihr Vinted-Portemonnaie mit professionellen Funktionen transformiert",
+    "description": "Erweiterte Analysen und professionelle Exporte für Vinted",
+    "longDescription": "Extended Wallet integriert sich nativ in Ihr Vinted-Portemonnaie, um eine detaillierte Finanzübersicht, automatische Transaktionskategorisierung, erweiterte Suchtools und professionelle CSV/PDF-Exporte hinzuzufügen. Entdecken Sie Ihre wahre Verkaufsleistung mit genauen Statistiken!",
+    "price": "Jahresabonnement",
+    "cta": "Extended Wallet entdecken"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, Ihr Projekt zu starten? Lassen Sie uns sprechen!",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "send": "Nachricht senden"
+    }
+  },
+  "footer": {
+    "description": "Innovative Softwareentwicklungslösungen",
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "es": "Español"
+  }
+}

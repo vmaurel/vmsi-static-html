@@ -1,0 +1,106 @@
+/* Styles pour l'internationalisation */
+
+/* Sélecteur de langue dans la navigation */
+.language-selector-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.language-selector {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--dark-color);
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    min-width: 130px;
+}
+
+.language-selector:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.language-selector:focus {
+    background: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.language-selector option {
+    background: white;
+    color: var(--dark-color);
+    padding: 8px;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .language-selector-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .language-selector {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+        min-width: 110px;
+    }
+}
+
+/* Animation de transition pour les changements de contenu */
+[data-i18n] {
+    transition: opacity 0.2s ease;
+}
+
+.i18n-updating [data-i18n] {
+    opacity: 0.7;
+}
+
+/* Style pour les drapeaux dans le sélecteur */
+.language-selector option {
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+}
+
+/* Amélioration du navbar pour accommoder le sélecteur de langue */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-menu {
+    flex: 1;
+    justify-content: center;
+}
+
+/* Ajustements pour écrans moyens */
+@media (max-width: 1024px) {
+    .language-selector-container {
+        position: absolute;
+        right: 60px; /* Laisse place au hamburger */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .language-selector-container {
+        position: static;
+        transform: none;
+        order: -1; /* Place le sélecteur avant le hamburger */
+    }
+    
+    .nav-menu {
+        order: 1;
+    }
+    
+    .hamburger {
+        order: 2;
+    }
+}

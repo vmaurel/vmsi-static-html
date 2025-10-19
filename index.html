@@ -47,6 +47,7 @@
     <!-- Fallback PNG favicon (reuses the 200x200 logo); ensure it exists -->
     <link rel="icon" type="image/png" href="images/extended-wallet-logo.png" sizes="200x200">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/i18n.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -65,12 +66,20 @@
                 <img src="images/vmsi-logo-rect.svg" alt="VMSI Logo" class="logo-rect">
             </div>
             <ul class="nav-menu">
-                <li><a href="#accueil" class="nav-link">Accueil</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#a-propos" class="nav-link">À propos</a></li>
-                <li><a href="#vinted-wallet" class="nav-link">Vinted Extended Wallet</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#accueil" class="nav-link" data-i18n="navigation.home">Accueil</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="navigation.services">Services</a></li>
+                <li><a href="#a-propos" class="nav-link" data-i18n="navigation.about">À propos</a></li>
+                <li><a href="#vinted-wallet" class="nav-link" data-i18n="navigation.extendedWallet">Vinted Extended Wallet</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="navigation.contact">Contact</a></li>
             </ul>
+            <div class="language-selector-container">
+                <select id="language-selector" class="language-selector">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="es">🇪🇸 Español</option>
+                </select>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -83,17 +92,17 @@
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="hero.title">
                     Solutions <span class="highlight">Innovantes</span> 
                     de Développement Logiciel
                 </h1>
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
                     Transformez vos idées en applications web et mobile performantes avec VMSI. 
                     Expertise en React, React Native, .NET et Node.js.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Découvrir nos services</a>
-                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                    <a href="#services" class="btn btn-primary" data-i18n="hero.cta1">Découvrir nos services</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">Nous contacter</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -110,16 +119,16 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Nos Services</h2>
-            <p class="section-subtitle">Des solutions techniques adaptées à vos besoins</p>
+            <h2 class="section-title" data-i18n="services.title">Nos Services</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Des solutions techniques adaptées à vos besoins</p>
             
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Développement Web</h3>
-                    <p>Applications web modernes et performantes avec React et Node.js. Interface utilisateur intuitive et expérience optimale.</p>
+                    <h3 data-i18n="services.web.title">Développement Web</h3>
+                    <p data-i18n="services.web.description">Applications web modernes et performantes avec React et Node.js. Interface utilisateur intuitive et expérience optimale.</p>
                     <ul class="tech-list">
                         <li>React.js</li>
                         <li>Node.js</li>
@@ -459,6 +468,7 @@
     }
     </script>
 
+    <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

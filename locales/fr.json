@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "lang": "fr",
+    "title": "VMSI - Développement Logiciel et Services Informatiques",
+    "description": "VMSI - Entreprise de développement logiciel et services informatiques. Spécialisée en développement web et mobile avec .NET, React, React Native et Node.js",
+    "keywords": "développement web, développement mobile, React, React Native, Node.js, .NET, services informatiques, VMSI"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services", 
+    "about": "À propos",
+    "extendedWallet": "Vinted Extended Wallet",
+    "contact": "Contact",
+    "installation": "Installation",
+    "support": "Support"
+  },
+  "hero": {
+    "title": "Solutions <span class=\"highlight\">Innovantes</span> de Développement Logiciel",
+    "subtitle": "Transformez vos idées en applications web et mobile performantes avec VMSI. Expertise en React, React Native, .NET et Node.js.",
+    "cta1": "Découvrir nos services",
+    "cta2": "Nous contacter"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions techniques adaptées à vos besoins",
+    "web": {
+      "title": "Développement Web",
+      "description": "Applications web modernes et performantes avec React et Node.js. Interface utilisateur intuitive et expérience optimale."
+    },
+    "mobile": {
+      "title": "Développement Mobile", 
+      "description": "Applications mobiles cross-platform avec React Native. Une seule base de code pour iOS et Android."
+    },
+    "backend": {
+      "title": "Solutions Backend",
+      "description": "Architectures robustes et scalables avec .NET et Node.js. Bases de données optimisées et sécurité renforcée."
+    },
+    "consulting": {
+      "title": "Conseil & Expertise",
+      "description": "Accompagnement technique et stratégique pour vos projets. Audit de code, optimisation et formation."
+    }
+  },
+  "about": {
+    "title": "À propos de VMSI",
+    "description1": "VMSI est une entreprise spécialisée dans le développement de solutions logicielles innovantes, fondée par Vincent Maurel, développeur passionné avec une expertise approfondie en technologies modernes.",
+    "description2": "Notre mission est de transformer vos idées en applications performantes et scalables, en utilisant les dernières technologies du marché : React, React Native, .NET et Node.js.",
+    "stats": {
+      "experience": "Années d'expérience",
+      "projects": "Projets réalisés", 
+      "satisfaction": "Clients satisfaits"
+    },
+    "founder": "Fondateur & Développeur"
+  },
+  "extendedWallet": {
+    "title": "Vinted Extended Wallet",
+    "subtitle": "Extension Chrome qui transforme votre porte-monnaie Vinted avec des fonctionnalités professionnelles",
+    "description": "Analyses avancées et exports professionnels pour Vinted",
+    "longDescription": "Extended Wallet s'intègre nativement dans votre porte-monnaie Vinted pour ajouter un sommaire financier détaillé, la catégorisation automatique des transactions, des outils de recherche avancés et des exports CSV/PDF professionnels. Découvrez vos vraies performances de vente avec des statistiques précises !",
+    "price": "Abonnement annuel",
+    "cta": "Découvrir Extended Wallet"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Prêt à démarrer votre projet ? Parlons-en !",
+    "email": "Email",
+    "phone": "Téléphone", 
+    "location": "Localisation",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "send": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "description": "Solutions innovantes de développement logiciel",
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos", 
+    "contact": "Contact",
+    "terms": "CGU",
+    "privacy": "Confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English", 
+    "de": "Deutsch",
+    "es": "Español"
+  }
+}
