@@ -3,16 +3,16 @@
     "lang": "fr",
     "title": "VMSI - Développement Logiciel et Services Informatiques",
     "description": "VMSI - Entreprise de développement logiciel et services informatiques. Spécialisée en développement web et mobile avec .NET, React, React Native et Node.js",
-    "keywords": "développement web, développement mobile, React, React Native, Node.js, .NET, services informatiques, VMSI"
+    "keywords": "développement web, développement mobile, React, React Native, Node.js, .NET, services informatiques, VMSI",
+    "ogTitle": "VMSI - Développement Logiciel et Services Informatiques",
+    "ogDescription": "Solutions professionnelles de développement web et mobile par Vincent Maurel"
   },
   "navigation": {
     "home": "Accueil",
-    "services": "Services", 
+    "services": "Services",
     "about": "À propos",
     "extendedWallet": "Vinted Extended Wallet",
-    "contact": "Contact",
-    "installation": "Installation",
-    "support": "Support"
+    "contact": "Contact"
   },
   "hero": {
     "title": "Solutions <span class=\"highlight\">Innovantes</span> de Développement Logiciel",
@@ -28,7 +28,7 @@
       "description": "Applications web modernes et performantes avec React et Node.js. Interface utilisateur intuitive et expérience optimale."
     },
     "mobile": {
-      "title": "Développement Mobile", 
+      "title": "Développement Mobile",
       "description": "Applications mobiles cross-platform avec React Native. Une seule base de code pour iOS et Android."
     },
     "backend": {
@@ -46,48 +46,139 @@
     "description2": "Notre mission est de transformer vos idées en applications performantes et scalables, en utilisant les dernières technologies du marché : React, React Native, .NET et Node.js.",
     "stats": {
       "experience": "Années d'expérience",
-      "projects": "Projets réalisés", 
+      "projects": "Projets réalisés",
       "satisfaction": "Clients satisfaits"
     },
-    "founder": "Fondateur & Développeur"
+    "founder": {
+      "title": "Fondateur & Développeur"
+    }
   },
   "extendedWallet": {
     "title": "Vinted Extended Wallet",
     "subtitle": "Extension Chrome qui transforme votre porte-monnaie Vinted avec des fonctionnalités professionnelles",
-    "description": "Analyses avancées et exports professionnels pour Vinted",
-    "longDescription": "Extended Wallet s'intègre nativement dans votre porte-monnaie Vinted pour ajouter un sommaire financier détaillé, la catégorisation automatique des transactions, des outils de recherche avancés et des exports CSV/PDF professionnels. Découvrez vos vraies performances de vente avec des statistiques précises !",
-    "price": "Abonnement annuel",
+    "headline": "Analyses avancées et exports professionnels pour Vinted",
+    "description": "Extended Wallet s'intègre nativement dans votre porte-monnaie Vinted pour ajouter un sommaire financier détaillé, la catégorisation automatique des transactions, des outils de recherche avancés et des exports CSV/PDF professionnels. Découvrez vos vraies performances de vente avec des statistiques précises !",
+    "features": {
+      "stats": {
+        "title": "Statistiques détaillées intégrées",
+        "description": "Ventes, achats, frais et résultat net directement dans Vinted"
+      },
+      "categorization": {
+        "title": "Catégorisation automatique",
+        "description": "Chaque transaction automatiquement classée"
+      },
+      "search": {
+        "title": "Recherche et filtres",
+        "description": "Filtrez vos transactions en temps réel"
+      },
+      "csv": {
+        "title": "Export Excel/CSV optimisé",
+        "description": "Données formatées pour votre comptable et analyses"
+      },
+      "pdf": {
+        "title": "Rapports PDF avec vos données",
+        "description": "Documents professionnels générés automatiquement"
+      },
+      "navigation": {
+        "title": "Navigation par période",
+        "description": "Interface dédiée pour consulter vos historiques"
+      }
+    },
+    "pricing": {
+      "period": "Abonnement annuel"
+    },
     "cta": "Découvrir Extended Wallet"
   },
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Prêt à démarrer votre projet ? Parlons-en !",
-    "email": "Email",
-    "phone": "Téléphone", 
-    "location": "Localisation",
-    "linkedin": "LinkedIn",
+    "email": {
+      "label": "Email"
+    },
+    "phone": {
+      "label": "Téléphone"
+    },
+    "address": {
+      "label": "Adresse",
+      "value": "23 E route de la descente<br>05000 Gap"
+    },
     "form": {
       "name": "Votre nom",
       "email": "Votre email",
       "subject": "Sujet",
       "message": "Votre message",
-      "send": "Envoyer le message"
+      "submit": "Envoyer le message"
     }
   },
   "footer": {
-    "description": "Solutions innovantes de développement logiciel",
-    "home": "Accueil",
-    "services": "Services",
-    "about": "À propos", 
-    "contact": "Contact",
-    "terms": "CGU",
-    "privacy": "Confidentialité",
-    "rights": "Tous droits réservés."
+    "tagline": "Solutions innovantes de développement logiciel",
+    "links": {
+      "terms": "CGU",
+      "privacy": "Confidentialité"
+    },
+    "copyright": "© 2025 VMSI - Vincent Maurel. Tous droits réservés."
   },
-  "languages": {
-    "fr": "Français",
-    "en": "English", 
-    "de": "Deutsch",
-    "es": "Español"
+  "extendedWalletPage": {
+    "nav": {
+      "home": "Accueil"
+    },
+    "hero": {
+      "badge": "Extension Chrome",
+      "title": "Transformez votre porte-monnaie Vinted en <span class=\"highlight\">tableau de bord professionnel</span>",
+      "subtitle": "Vinted Extended Wallet ajoute un sommaire financier détaillé, une catégorisation automatique, des filtres de recherche avancés et des exports CSV/PDF directement dans votre interface Vinted. Analysez vos performances comme un pro !",
+      "stats": {
+        "features": "Statistiques détaillées",
+        "users": "Utilisateurs actifs",
+        "exports": "Exports inclus"
+      },
+      "cta": {
+        "main": "Obtenir l'extension maintenant",
+        "price": "Abonnement annuel - 28€"
+      },
+      "installGuide": "Guide d'installation détaillé"
+    },
+    "demo": {
+      "wallet": {
+        "title": "Votre porte-monnaie"
+      },
+      "summary": {
+        "sales": "Ventes",
+        "salesCount": "46 transactions",
+        "purchases": "Achats/Frais",
+        "purchasesCount": "21 transactions",
+        "withdrawals": "Retraits",
+        "withdrawalsCount": "4 transactions",
+        "netResult": "Résultat net",
+        "totalCount": "Total 73 transactions"
+      },
+      "search": {
+        "placeholder": "Rechercher dans les transactions..."
+      },
+      "buttons": {
+        "csv": "Télécharger CSV",
+        "pdf": "Rapport PDF"
+      },
+      "stats": {
+        "avgBasket": "Panier moyen :",
+        "bestSale": "Meilleure vente :",
+        "navigation": "Naviguez facilement entre les mois"
+      }
+    }
+  },
+  "cguPage": {
+    "nav": {
+      "back": "Retour à Extended Wallet"
+    },
+    "title": "CONDITIONS GÉNÉRALES D'UTILISATION",
+    "subtitle": "Extension Chrome \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025"
+  },
+  "privacyPage": {
+    "nav": {
+      "back": "Retour à Extended Wallet"
+    },
+    "title": "POLITIQUE DE CONFIDENTIALITÉ",
+    "subtitle": "Extension Chrome \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025"
   }
 }

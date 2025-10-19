@@ -3,16 +3,16 @@
     "lang": "de",
     "title": "VMSI - Softwareentwicklung und IT-Dienstleistungen",
     "description": "VMSI - Unternehmen für Softwareentwicklung und IT-Dienstleistungen. Spezialisiert auf Web- und Mobile-Entwicklung mit .NET, React, React Native und Node.js",
-    "keywords": "Webentwicklung, mobile Entwicklung, React, React Native, Node.js, .NET, IT-Dienstleistungen, VMSI"
+    "keywords": "Webentwicklung, Mobile-Entwicklung, React, React Native, Node.js, .NET, IT-Dienstleistungen, VMSI",
+    "ogTitle": "VMSI - Softwareentwicklung und IT-Dienstleistungen",
+    "ogDescription": "Professionelle Web- und Mobile-Entwicklungslösungen von Vincent Maurel"
   },
   "navigation": {
     "home": "Startseite",
     "services": "Dienstleistungen",
     "about": "Über uns",
     "extendedWallet": "Vinted Extended Wallet",
-    "contact": "Kontakt",
-    "installation": "Installation",
-    "support": "Support"
+    "contact": "Kontakt"
   },
   "hero": {
     "title": "<span class=\"highlight\">Innovative</span> Softwareentwicklungslösungen",
@@ -28,12 +28,12 @@
       "description": "Moderne und leistungsstarke Webanwendungen mit React und Node.js. Intuitive Benutzeroberfläche und optimale Erfahrung."
     },
     "mobile": {
-      "title": "Mobile Entwicklung",
+      "title": "Mobile-Entwicklung",
       "description": "Plattformübergreifende mobile Anwendungen mit React Native. Eine Codebasis für iOS und Android."
     },
     "backend": {
       "title": "Backend-Lösungen",
-      "description": "Robuste und skalierbare Architekturen mit .NET und Node.js. Optimierte Datenbanken und verbesserte Sicherheit."
+      "description": "Robuste und skalierbare Architekturen mit .NET und Node.js. Optimierte Datenbanken und erweiterte Sicherheit."
     },
     "consulting": {
       "title": "Beratung & Expertise",
@@ -49,45 +49,136 @@
       "projects": "Abgeschlossene Projekte",
       "satisfaction": "Zufriedene Kunden"
     },
-    "founder": "Gründer & Entwickler"
+    "founder": {
+      "title": "Gründer & Entwickler"
+    }
   },
   "extendedWallet": {
     "title": "Vinted Extended Wallet",
     "subtitle": "Chrome-Erweiterung, die Ihr Vinted-Portemonnaie mit professionellen Funktionen transformiert",
-    "description": "Erweiterte Analysen und professionelle Exporte für Vinted",
-    "longDescription": "Extended Wallet integriert sich nativ in Ihr Vinted-Portemonnaie, um eine detaillierte Finanzübersicht, automatische Transaktionskategorisierung, erweiterte Suchtools und professionelle CSV/PDF-Exporte hinzuzufügen. Entdecken Sie Ihre wahre Verkaufsleistung mit genauen Statistiken!",
-    "price": "Jahresabonnement",
+    "headline": "Erweiterte Analysen und professionelle Exporte für Vinted",
+    "description": "Extended Wallet integriert sich nativ in Ihr Vinted-Portemonnaie, um detaillierte Finanzübersichten, automatische Transaktionskategorisierung, erweiterte Suchtools und professionelle CSV/PDF-Exporte hinzuzufügen. Entdecken Sie Ihre wahre Verkaufsleistung mit genauen Statistiken!",
+    "features": {
+      "stats": {
+        "title": "Integrierte detaillierte Statistiken",
+        "description": "Verkäufe, Käufe, Gebühren und Nettoergebnis direkt in Vinted"
+      },
+      "categorization": {
+        "title": "Automatische Kategorisierung",
+        "description": "Jede Transaktion automatisch klassifiziert"
+      },
+      "search": {
+        "title": "Suche und Filter",
+        "description": "Filtern Sie Ihre Transaktionen in Echtzeit"
+      },
+      "csv": {
+        "title": "Optimierter Excel/CSV-Export",
+        "description": "Daten formatiert für Ihren Buchhalter und Analysen"
+      },
+      "pdf": {
+        "title": "PDF-Berichte mit Ihren Daten",
+        "description": "Professionelle Dokumente automatisch generiert"
+      },
+      "navigation": {
+        "title": "Periodennavigation",
+        "description": "Dedizierte Oberfläche zum Durchsuchen Ihrer Historie"
+      }
+    },
+    "pricing": {
+      "period": "Jahresabonnement"
+    },
     "cta": "Extended Wallet entdecken"
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
     "subtitle": "Bereit, Ihr Projekt zu starten? Lassen Sie uns sprechen!",
-    "email": "E-Mail",
-    "phone": "Telefon",
-    "location": "Standort",
-    "linkedin": "LinkedIn",
+    "email": {
+      "label": "E-Mail"
+    },
+    "phone": {
+      "label": "Telefon"
+    },
+    "address": {
+      "label": "Adresse",
+      "value": "23 E route de la descente<br>05000 Gap, Frankreich"
+    },
     "form": {
       "name": "Ihr Name",
       "email": "Ihre E-Mail",
       "subject": "Betreff",
       "message": "Ihre Nachricht",
-      "send": "Nachricht senden"
+      "submit": "Nachricht senden"
     }
   },
   "footer": {
-    "description": "Innovative Softwareentwicklungslösungen",
-    "home": "Startseite",
-    "services": "Dienstleistungen",
-    "about": "Über uns",
-    "contact": "Kontakt",
-    "terms": "AGB",
-    "privacy": "Datenschutz",
-    "rights": "Alle Rechte vorbehalten."
+    "tagline": "Innovative Softwareentwicklungslösungen",
+    "links": {
+      "terms": "AGB",
+      "privacy": "Datenschutz"
+    },
+    "copyright": "© 2025 VMSI - Vincent Maurel. Alle Rechte vorbehalten."
   },
-  "languages": {
-    "fr": "Français",
-    "en": "English",
-    "de": "Deutsch",
-    "es": "Español"
+  "extendedWalletPage": {
+    "nav": {
+      "home": "Startseite"
+    },
+    "hero": {
+      "badge": "Chrome-Erweiterung",
+      "title": "Verwandeln Sie Ihr Vinted-Portemonnaie in ein <span class=\"highlight\">professionelles Dashboard</span>",
+      "subtitle": "Vinted Extended Wallet fügt detaillierte Finanzübersichten, automatische Kategorisierung, erweiterte Suchfilter und CSV/PDF-Exporte direkt zu Ihrer Vinted-Oberfläche hinzu. Analysieren Sie Ihre Leistung wie ein Profi!",
+      "stats": {
+        "features": "Detaillierte Statistiken",
+        "users": "Aktive Benutzer",
+        "exports": "Exporte enthalten"
+      },
+      "cta": {
+        "main": "Erweiterung jetzt erhalten",
+        "price": "Jahresabonnement - 28€"
+      },
+      "installGuide": "Detaillierte Installationsanleitung"
+    },
+    "demo": {
+      "wallet": {
+        "title": "Ihr Portemonnaie"
+      },
+      "summary": {
+        "sales": "Verkäufe",
+        "salesCount": "46 Transaktionen",
+        "purchases": "Käufe/Gebühren",
+        "purchasesCount": "21 Transaktionen",
+        "withdrawals": "Abhebungen",
+        "withdrawalsCount": "4 Transaktionen",
+        "netResult": "Nettoergebnis",
+        "totalCount": "Gesamt 73 Transaktionen"
+      },
+      "search": {
+        "placeholder": "In Transaktionen suchen..."
+      },
+      "buttons": {
+        "csv": "CSV herunterladen",
+        "pdf": "PDF-Bericht"
+      },
+      "stats": {
+        "avgBasket": "Durchschnittlicher Warenkorb:",
+        "bestSale": "Bester Verkauf:",
+        "navigation": "Einfach zwischen Monaten navigieren"
+      }
+    }
+  },
+  "cguPage": {
+    "nav": {
+      "back": "Zurück zu Extended Wallet"
+    },
+    "title": "NUTZUNGSBEDINGUNGEN",
+    "subtitle": "Chrome-Erweiterung \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Inkrafttreten: 13. Oktober 2025"
+  },
+  "privacyPage": {
+    "nav": {
+      "back": "Zurück zu Extended Wallet"
+    },
+    "title": "DATENSCHUTZRICHTLINIE",
+    "subtitle": "Chrome-Erweiterung \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Inkrafttreten: 13. Oktober 2025"
   }
 }

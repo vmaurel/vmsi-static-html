@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
     <style>
         :root {
             --primary-color: #0066cc;
@@ -312,20 +313,30 @@
                 <img src="images/extended-wallet-logo.svg" alt="Extended Wallet Logo">
                 <span class="nav-title">Extended Wallet</span>
             </div>
-            <a href="vinted-extended-wallet.html" class="back-link">
-                <i class="fas fa-arrow-left"></i>
-                Retour à Extended Wallet
-            </a>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="language-selector-container">
+                    <select id="language-selector" class="language-selector">
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="es">🇪🇸 Español</option>
+                    </select>
+                </div>
+                <a href="vinted-extended-wallet.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="cguPage.nav.back">Retour à Extended Wallet</span>
+                </a>
+            </div>
         </div>
     </nav>
 
     <div class="container">
         <div class="content-wrapper">
             <div class="header-section">
-                <h1>CONDITIONS GÉNÉRALES D'UTILISATION</h1>
-                <p class="subtitle">Extension Chrome "Vinted Extended Wallet"</p>
+                <h1 data-i18n="cguPage.title">CONDITIONS GÉNÉRALES D'UTILISATION</h1>
+                <p class="subtitle" data-i18n="cguPage.subtitle">Extension Chrome "Vinted Extended Wallet"</p>
                 <div class="version-info">
-                    <strong>Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025</strong>
+                    <strong data-i18n="cguPage.version">Version 1.0 - Date d'entrée en vigueur : 13 octobre 2025</strong>
                 </div>
             </div>
 
@@ -488,5 +499,7 @@
             </div>
         </div>
     </div>
+    
+    <script src="js/i18n.js"></script>
 </body>
 </html>

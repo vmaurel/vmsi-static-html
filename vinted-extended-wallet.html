@@ -45,6 +45,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/tunnel-vente.css">
+    <link rel="stylesheet" href="css/i18n.css">
 
     <!-- Stripe -->
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
@@ -76,6 +77,29 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Navigation avec sélecteur de langue -->
+    <nav class="navbar" style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+            <div class="nav-brand" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="images/extended-wallet-logo.svg" alt="Extended Wallet Logo" style="height: 40px;">
+                <span style="font-size: 1.5rem; font-weight: 600; color: #0066cc;">Extended Wallet</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="language-selector-container">
+                    <select id="language-selector" class="language-selector">
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="es">🇪🇸 Español</option>
+                    </select>
+                </div>
+                <a href="index.html" style="color: #0066cc; text-decoration: none; font-weight: 500;">
+                    <i class="fas fa-home"></i> <span data-i18n="extendedWalletPage.nav.home">Accueil</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero-tunnel">
         <div class="container">
@@ -87,16 +111,16 @@
                     <div class="brand-aside">
                         <div class="hero-badge">
                             <i class="fab fa-chrome"></i>
-                            Extension Chrome
+                            <span data-i18n="extendedWalletPage.hero.badge">Extension Chrome</span>
                         </div>
                     </div>
                 </div>
                 
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="extendedWalletPage.hero.title">
                     Transformez votre porte-monnaie Vinted en <span class="highlight">tableau de bord professionnel</span>
                 </h1>
                 
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-i18n="extendedWalletPage.hero.subtitle">
                     Vinted Extended Wallet ajoute un sommaire financier détaillé, une catégorisation automatique, 
                     des filtres de recherche avancés et des exports CSV/PDF directement dans votre interface Vinted. 
                     Analysez vos performances comme un pro !
@@ -105,27 +129,27 @@
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
-                        <span class="stat-label">Statistiques détaillées</span>
+                        <span class="stat-label" data-i18n="extendedWalletPage.hero.stats.features">Statistiques détaillées</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">500+</span>
-                        <span class="stat-label">Utilisateurs actifs</span>
+                        <span class="stat-label" data-i18n="extendedWalletPage.hero.stats.users">Utilisateurs actifs</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">CSV+PDF</span>
-                        <span class="stat-label">Exports inclus</span>
+                        <span class="stat-label" data-i18n="extendedWalletPage.hero.stats.exports">Exports inclus</span>
                     </div>
                 </div>
 
                 <div class="cta-primary">
                     <button class="btn-cta" onclick="scrollToOrder()">
                         <i class="fas fa-download"></i>
-                        Obtenir l'extension maintenant
-                        <small>Abonnement annuel - 28€</small>
+                        <span data-i18n="extendedWalletPage.hero.cta.main">Obtenir l'extension maintenant</span>
+                        <small data-i18n="extendedWalletPage.hero.cta.price">Abonnement annuel - 28€</small>
                     </button>
                     <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
                         <a href="vinted-extended-wallet-installation.html" style="color: white; text-decoration: underline;">
-                            📖 Guide d'installation détaillé
+                            📖 <span data-i18n="extendedWalletPage.hero.installGuide">Guide d'installation détaillé</span>
                         </a>
                     </p>
                 </div>
@@ -144,46 +168,46 @@
                     <div class="browser-content">
                         <div class="extension-demo">
                             <div class="vinted-interface">
-                                <h3>Votre porte-monnaie</h3>
+                                <h3 data-i18n="extendedWalletPage.demo.wallet.title">Votre porte-monnaie</h3>
                                 <div class="balance">57,32 €</div>
                             </div>
                             <div class="extension-overlay">
                                 <div class="wallet-summary">
                                     <div class="summary-card income">
-                                        <h4>Ventes</h4>
+                                        <h4 data-i18n="extendedWalletPage.demo.summary.sales">Ventes</h4>
                                         <div class="amount">+1579.21 €</div>
-                                        <div class="details">46 transactions</div>
+                                        <div class="details" data-i18n="extendedWalletPage.demo.summary.salesCount">46 transactions</div>
                                     </div>
                                     <div class="summary-card expense">
-                                        <h4>Achats/Frais</h4>
+                                        <h4 data-i18n="extendedWalletPage.demo.summary.purchases">Achats/Frais</h4>
                                         <div class="amount">-280.41 €</div>
-                                        <div class="details">21 transactions</div>
+                                        <div class="details" data-i18n="extendedWalletPage.demo.summary.purchasesCount">21 transactions</div>
                                     </div>
                                     <div class="summary-card warning">
-                                        <h4>Retraits</h4>
+                                        <h4 data-i18n="extendedWalletPage.demo.summary.withdrawals">Retraits</h4>
                                         <div class="amount">-1100.00 €</div>
-                                        <div class="details">4 transactions</div>
+                                        <div class="details" data-i18n="extendedWalletPage.demo.summary.withdrawalsCount">4 transactions</div>
                                     </div>
                                     <div class="summary-card net-result">
-                                        <h4>Résultat net</h4>
+                                        <h4 data-i18n="extendedWalletPage.demo.summary.netResult">Résultat net</h4>
                                         <div class="amount positive">+1579.21 €</div>
-                                        <div class="details">Total 73 transactions</div>
+                                        <div class="details" data-i18n="extendedWalletPage.demo.summary.totalCount">Total 73 transactions</div>
                                     </div>
                                 </div>
                                 
                                 <div class="transactions-toolbar">
                                     <div class="search-box">
                                         <i class="fas fa-search"></i>
-                                        <input type="text" placeholder="Rechercher dans les transactions...">
+                                        <input type="text" data-i18n-placeholder="extendedWalletPage.demo.search.placeholder" placeholder="Rechercher dans les transactions...">
                                     </div>
                                     <div class="export-buttons">
                                         <button class="btn-export csv">
                                             <i class="fas fa-file-csv"></i>
-                                            Télécharger CSV
+                                            <span data-i18n="extendedWalletPage.demo.buttons.csv">Télécharger CSV</span>
                                         </button>
                                         <button class="btn-export pdf">
                                             <i class="fas fa-file-pdf"></i>
-                                            Rapport PDF
+                                            <span data-i18n="extendedWalletPage.demo.buttons.pdf">Rapport PDF</span>
                                         </button>
                                     </div>
                                 </div>
@@ -191,16 +215,16 @@
                                 <div class="stats-widget">
                                     <h4><i class="fas fa-chart-line"></i> Vinted Extended Wallet</h4>
                                     <div class="stat-row">
-                                        <span>Panier moyen :</span>
+                                        <span data-i18n="extendedWalletPage.demo.stats.avgBasket">Panier moyen :</span>
                                         <strong>40.58 €</strong>
                                     </div>
                                     <div class="stat-row">
-                                        <span>Meilleure vente :</span>
+                                        <span data-i18n="extendedWalletPage.demo.stats.bestSale">Meilleure vente :</span>
                                         <strong>220.00 €</strong>
                                     </div>
                                     <div class="navigation-hint">
                                         <i class="fas fa-calendar-alt"></i>
-                                        Naviguez facilement entre les mois
+                                        <span data-i18n="extendedWalletPage.demo.stats.navigation">Naviguez facilement entre les mois</span>
                                     </div>
                                 </div>
                             </div>
@@ -619,6 +643,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="js/i18n.js"></script>
     <script src="js/tunnel-vente.js"></script>
 </body>
 </html>

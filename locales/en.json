@@ -3,16 +3,16 @@
     "lang": "en",
     "title": "VMSI - Software Development and IT Services",
     "description": "VMSI - Software development and IT services company. Specialized in web and mobile development with .NET, React, React Native and Node.js",
-    "keywords": "web development, mobile development, React, React Native, Node.js, .NET, IT services, VMSI"
+    "keywords": "web development, mobile development, React, React Native, Node.js, .NET, IT services, VMSI",
+    "ogTitle": "VMSI - Software Development and IT Services",
+    "ogDescription": "Professional web and mobile development solutions by Vincent Maurel"
   },
   "navigation": {
     "home": "Home",
     "services": "Services",
     "about": "About",
     "extendedWallet": "Vinted Extended Wallet",
-    "contact": "Contact",
-    "installation": "Installation",
-    "support": "Support"
+    "contact": "Contact"
   },
   "hero": {
     "title": "<span class=\"highlight\">Innovative</span> Software Development Solutions",
@@ -25,7 +25,7 @@
     "subtitle": "Technical solutions tailored to your needs",
     "web": {
       "title": "Web Development",
-      "description": "Modern and high-performance web applications with React and Node.js. Intuitive user interface and optimal experience."
+      "description": "Modern and performant web applications with React and Node.js. Intuitive user interface and optimal experience."
     },
     "mobile": {
       "title": "Mobile Development",
@@ -42,52 +42,143 @@
   },
   "about": {
     "title": "About VMSI",
-    "description1": "VMSI is a company specialized in the development of innovative software solutions, founded by Vincent Maurel, a passionate developer with deep expertise in modern technologies.",
-    "description2": "Our mission is to transform your ideas into high-performance and scalable applications, using the latest market technologies: React, React Native, .NET and Node.js.",
+    "description1": "VMSI is a company specialized in developing innovative software solutions, founded by Vincent Maurel, a passionate developer with deep expertise in modern technologies.",
+    "description2": "Our mission is to transform your ideas into performant and scalable applications, using the latest market technologies: React, React Native, .NET and Node.js.",
     "stats": {
       "experience": "Years of experience",
-      "projects": "Projects completed",
+      "projects": "Completed projects",
       "satisfaction": "Satisfied clients"
     },
-    "founder": "Founder & Developer"
+    "founder": {
+      "title": "Founder & Developer"
+    }
   },
   "extendedWallet": {
     "title": "Vinted Extended Wallet",
     "subtitle": "Chrome extension that transforms your Vinted wallet with professional features",
-    "description": "Advanced analytics and professional exports for Vinted",
-    "longDescription": "Extended Wallet integrates natively into your Vinted wallet to add detailed financial summary, automatic transaction categorization, advanced search tools and professional CSV/PDF exports. Discover your real sales performance with accurate statistics!",
-    "price": "Annual subscription",
+    "headline": "Advanced analytics and professional exports for Vinted",
+    "description": "Extended Wallet integrates natively into your Vinted wallet to add detailed financial summaries, automatic transaction categorization, advanced search tools and professional CSV/PDF exports. Discover your true sales performance with accurate statistics!",
+    "features": {
+      "stats": {
+        "title": "Integrated detailed statistics",
+        "description": "Sales, purchases, fees and net result directly in Vinted"
+      },
+      "categorization": {
+        "title": "Automatic categorization",
+        "description": "Each transaction automatically classified"
+      },
+      "search": {
+        "title": "Search and filters",
+        "description": "Filter your transactions in real time"
+      },
+      "csv": {
+        "title": "Optimized Excel/CSV export",
+        "description": "Data formatted for your accountant and analysis"
+      },
+      "pdf": {
+        "title": "PDF reports with your data",
+        "description": "Professional documents generated automatically"
+      },
+      "navigation": {
+        "title": "Period navigation",
+        "description": "Dedicated interface to browse your history"
+      }
+    },
+    "pricing": {
+      "period": "Annual subscription"
+    },
     "cta": "Discover Extended Wallet"
   },
   "contact": {
-    "title": "Contact us",
+    "title": "Contact Us",
     "subtitle": "Ready to start your project? Let's talk!",
-    "email": "Email",
-    "phone": "Phone",
-    "location": "Location",
-    "linkedin": "LinkedIn",
+    "email": {
+      "label": "Email"
+    },
+    "phone": {
+      "label": "Phone"
+    },
+    "address": {
+      "label": "Address",
+      "value": "23 E route de la descente<br>05000 Gap, France"
+    },
     "form": {
       "name": "Your name",
       "email": "Your email",
       "subject": "Subject",
       "message": "Your message",
-      "send": "Send message"
+      "submit": "Send message"
     }
   },
   "footer": {
-    "description": "Innovative software development solutions",
-    "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "contact": "Contact",
-    "terms": "Terms",
-    "privacy": "Privacy",
-    "rights": "All rights reserved."
+    "tagline": "Innovative software development solutions",
+    "links": {
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "copyright": "© 2025 VMSI - Vincent Maurel. All rights reserved."
   },
-  "languages": {
-    "fr": "Français",
-    "en": "English",
-    "de": "Deutsch", 
-    "es": "Español"
+  "extendedWalletPage": {
+    "nav": {
+      "home": "Home"
+    },
+    "hero": {
+      "badge": "Chrome Extension",
+      "title": "Transform your Vinted wallet into a <span class=\"highlight\">professional dashboard</span>",
+      "subtitle": "Vinted Extended Wallet adds detailed financial summaries, automatic categorization, advanced search filters and CSV/PDF exports directly to your Vinted interface. Analyze your performance like a pro!",
+      "stats": {
+        "features": "Detailed statistics",
+        "users": "Active users",
+        "exports": "Exports included"
+      },
+      "cta": {
+        "main": "Get the extension now",
+        "price": "Annual subscription - €28"
+      },
+      "installGuide": "Detailed installation guide"
+    },
+    "demo": {
+      "wallet": {
+        "title": "Your wallet"
+      },
+      "summary": {
+        "sales": "Sales",
+        "salesCount": "46 transactions",
+        "purchases": "Purchases/Fees",
+        "purchasesCount": "21 transactions",
+        "withdrawals": "Withdrawals",
+        "withdrawalsCount": "4 transactions",
+        "netResult": "Net result",
+        "totalCount": "Total 73 transactions"
+      },
+      "search": {
+        "placeholder": "Search in transactions..."
+      },
+      "buttons": {
+        "csv": "Download CSV",
+        "pdf": "PDF Report"
+      },
+      "stats": {
+        "avgBasket": "Average basket:",
+        "bestSale": "Best sale:",
+        "navigation": "Navigate easily between months"
+      }
+    }
+  },
+  "cguPage": {
+    "nav": {
+      "back": "Back to Extended Wallet"
+    },
+    "title": "TERMS OF USE",
+    "subtitle": "Chrome Extension \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Effective date: October 13, 2025"
+  },
+  "privacyPage": {
+    "nav": {
+      "back": "Back to Extended Wallet"
+    },
+    "title": "PRIVACY POLICY",
+    "subtitle": "Chrome Extension \"Vinted Extended Wallet\"",
+    "version": "Version 1.0 - Effective date: October 13, 2025"
   }
 }

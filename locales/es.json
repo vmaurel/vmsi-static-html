@@ -3,37 +3,37 @@
     "lang": "es",
     "title": "VMSI - Desarrollo de Software y Servicios Informáticos",
     "description": "VMSI - Empresa de desarrollo de software y servicios informáticos. Especializada en desarrollo web y móvil con .NET, React, React Native y Node.js",
-    "keywords": "desarrollo web, desarrollo móvil, React, React Native, Node.js, .NET, servicios informáticos, VMSI"
+    "keywords": "desarrollo web, desarrollo móvil, React, React Native, Node.js, .NET, servicios informáticos, VMSI",
+    "ogTitle": "VMSI - Desarrollo de Software y Servicios Informáticos",
+    "ogDescription": "Soluciones profesionales de desarrollo web y móvil por Vincent Maurel"
   },
   "navigation": {
     "home": "Inicio",
     "services": "Servicios",
     "about": "Acerca de",
     "extendedWallet": "Vinted Extended Wallet",
-    "contact": "Contacto",
-    "installation": "Instalación",
-    "support": "Soporte"
+    "contact": "Contacto"
   },
   "hero": {
     "title": "Soluciones <span class=\"highlight\">Innovadoras</span> de Desarrollo de Software",
-    "subtitle": "Transforma tus ideas en aplicaciones web y móviles de alto rendimiento con VMSI. Experiencia en React, React Native, .NET y Node.js.",
-    "cta1": "Descubrir nuestros servicios",
-    "cta2": "Contáctanos"
+    "subtitle": "Transforme sus ideas en aplicaciones web y móviles de alto rendimiento con VMSI. Experiencia en React, React Native, .NET y Node.js.",
+    "cta1": "Descubra nuestros servicios",
+    "cta2": "Contáctenos"
   },
   "services": {
     "title": "Nuestros Servicios",
     "subtitle": "Soluciones técnicas adaptadas a sus necesidades",
     "web": {
       "title": "Desarrollo Web",
-      "description": "Aplicaciones web modernas y de alto rendimiento con React y Node.js. Interfaz de usuario intuitiva y experiencia óptima."
+      "description": "Aplicaciones web modernas y eficientes con React y Node.js. Interfaz de usuario intuitiva y experiencia óptima."
     },
     "mobile": {
       "title": "Desarrollo Móvil",
-      "description": "Aplicaciones móviles multiplataforma con React Native. Una base de código para iOS y Android."
+      "description": "Aplicaciones móviles multiplataforma con React Native. Una sola base de código para iOS y Android."
     },
     "backend": {
       "title": "Soluciones Backend",
-      "description": "Arquitecturas robustas y escalables con .NET y Node.js. Bases de datos optimizadas y seguridad mejorada."
+      "description": "Arquitecturas robustas y escalables con .NET y Node.js. Bases de datos optimizadas y seguridad reforzada."
     },
     "consulting": {
       "title": "Consultoría y Experiencia",
@@ -42,52 +42,143 @@
   },
   "about": {
     "title": "Acerca de VMSI",
-    "description1": "VMSI es una empresa especializada en el desarrollo de soluciones de software innovadoras, fundada por Vincent Maurel, un desarrollador apasionado con profunda experiencia en tecnologías modernas.",
-    "description2": "Nuestra misión es transformar sus ideas en aplicaciones de alto rendimiento y escalables, utilizando las últimas tecnologías del mercado: React, React Native, .NET y Node.js.",
+    "description1": "VMSI es una empresa especializada en el desarrollo de soluciones de software innovadoras, fundada por Vincent Maurel, un desarrollador apasionado con una profunda experiencia en tecnologías modernas.",
+    "description2": "Nuestra misión es transformar sus ideas en aplicaciones eficientes y escalables, utilizando las últimas tecnologías del mercado: React, React Native, .NET y Node.js.",
     "stats": {
       "experience": "Años de experiencia",
       "projects": "Proyectos completados",
       "satisfaction": "Clientes satisfechos"
     },
-    "founder": "Fundador y Desarrollador"
+    "founder": {
+      "title": "Fundador y Desarrollador"
+    }
   },
   "extendedWallet": {
     "title": "Vinted Extended Wallet",
-    "subtitle": "Extensión de Chrome que transforma tu monedero de Vinted con funciones profesionales",
-    "description": "Análisis avanzados y exportaciones profesionales para Vinted",
-    "longDescription": "Extended Wallet se integra nativamente en tu monedero de Vinted para agregar un resumen financiero detallado, categorización automática de transacciones, herramientas de búsqueda avanzada y exportaciones profesionales CSV/PDF. ¡Descubre tu verdadero rendimiento de ventas con estadísticas precisas!",
-    "price": "Suscripción anual",
+    "subtitle": "Extensión de Chrome que transforma su monedero Vinted con funcionalidades profesionales",
+    "headline": "Análisis avanzados y exportaciones profesionales para Vinted",
+    "description": "Extended Wallet se integra nativamente en su monedero Vinted para agregar un resumen financiero detallado, categorización automática de transacciones, herramientas de búsqueda avanzadas y exportaciones profesionales CSV/PDF. ¡Descubra su verdadero rendimiento de ventas con estadísticas precisas!",
+    "features": {
+      "stats": {
+        "title": "Estadísticas detalladas integradas",
+        "description": "Ventas, compras, tarifas y resultado neto directamente en Vinted"
+      },
+      "categorization": {
+        "title": "Categorización automática",
+        "description": "Cada transacción automáticamente clasificada"
+      },
+      "search": {
+        "title": "Búsqueda y filtros",
+        "description": "Filtre sus transacciones en tiempo real"
+      },
+      "csv": {
+        "title": "Exportación Excel/CSV optimizada",
+        "description": "Datos formateados para su contador y análisis"
+      },
+      "pdf": {
+        "title": "Informes PDF con sus datos",
+        "description": "Documentos profesionales generados automáticamente"
+      },
+      "navigation": {
+        "title": "Navegación por período",
+        "description": "Interfaz dedicada para consultar su historial"
+      }
+    },
+    "pricing": {
+      "period": "Suscripción anual"
+    },
     "cta": "Descubrir Extended Wallet"
   },
   "contact": {
-    "title": "Contáctanos",
-    "subtitle": "¿Listo para comenzar tu proyecto? ¡Hablemos!",
-    "email": "Correo electrónico",
-    "phone": "Teléfono",
-    "location": "Ubicación",
-    "linkedin": "LinkedIn",
+    "title": "Contáctenos",
+    "subtitle": "¿Listo para comenzar su proyecto? ¡Hablemos!",
+    "email": {
+      "label": "Correo electrónico"
+    },
+    "phone": {
+      "label": "Teléfono"
+    },
+    "address": {
+      "label": "Dirección",
+      "value": "23 E route de la descente<br>05000 Gap, Francia"
+    },
     "form": {
-      "name": "Tu nombre",
-      "email": "Tu correo electrónico",
+      "name": "Su nombre",
+      "email": "Su correo electrónico",
       "subject": "Asunto",
-      "message": "Tu mensaje",
-      "send": "Enviar mensaje"
+      "message": "Su mensaje",
+      "submit": "Enviar mensaje"
     }
   },
   "footer": {
-    "description": "Soluciones innovadoras de desarrollo de software",
-    "home": "Inicio",
-    "services": "Servicios",
-    "about": "Acerca de",
-    "contact": "Contacto",
-    "terms": "Términos",
-    "privacy": "Privacidad",
-    "rights": "Todos los derechos reservados."
+    "tagline": "Soluciones innovadoras de desarrollo de software",
+    "links": {
+      "terms": "Términos",
+      "privacy": "Privacidad"
+    },
+    "copyright": "© 2025 VMSI - Vincent Maurel. Todos los derechos reservados."
   },
-  "languages": {
-    "fr": "Français",
-    "en": "English",
-    "de": "Deutsch",
-    "es": "Español"
+  "extendedWalletPage": {
+    "nav": {
+      "home": "Inicio"
+    },
+    "hero": {
+      "badge": "Extensión de Chrome",
+      "title": "Transforme su monedero Vinted en un <span class=\"highlight\">panel profesional</span>",
+      "subtitle": "Vinted Extended Wallet agrega resúmenes financieros detallados, categorización automática, filtros de búsqueda avanzados y exportaciones CSV/PDF directamente a su interfaz Vinted. ¡Analice su rendimiento como un profesional!",
+      "stats": {
+        "features": "Estadísticas detalladas",
+        "users": "Usuarios activos",
+        "exports": "Exportaciones incluidas"
+      },
+      "cta": {
+        "main": "Obtener la extensión ahora",
+        "price": "Suscripción anual - 28€"
+      },
+      "installGuide": "Guía de instalación detallada"
+    },
+    "demo": {
+      "wallet": {
+        "title": "Su monedero"
+      },
+      "summary": {
+        "sales": "Ventas",
+        "salesCount": "46 transacciones",
+        "purchases": "Compras/Tarifas",
+        "purchasesCount": "21 transacciones",
+        "withdrawals": "Retiros",
+        "withdrawalsCount": "4 transacciones",
+        "netResult": "Resultado neto",
+        "totalCount": "Total 73 transacciones"
+      },
+      "search": {
+        "placeholder": "Buscar en transacciones..."
+      },
+      "buttons": {
+        "csv": "Descargar CSV",
+        "pdf": "Informe PDF"
+      },
+      "stats": {
+        "avgBasket": "Cesta promedio:",
+        "bestSale": "Mejor venta:",
+        "navigation": "Navegar fácilmente entre meses"
+      }
+    }
+  },
+  "cguPage": {
+    "nav": {
+      "back": "Volver a Extended Wallet"
+    },
+    "title": "TÉRMINOS DE USO",
+    "subtitle": "Extensión de Chrome \"Vinted Extended Wallet\"",
+    "version": "Versión 1.0 - Fecha de entrada en vigor: 13 de octubre de 2025"
+  },
+  "privacyPage": {
+    "nav": {
+      "back": "Volver a Extended Wallet"
+    },
+    "title": "POLÍTICA DE PRIVACIDAD",
+    "subtitle": "Extensión de Chrome \"Vinted Extended Wallet\"",
+    "version": "Versión 1.0 - Fecha de entrada en vigor: 13 de octubre de 2025"
   }
 }
