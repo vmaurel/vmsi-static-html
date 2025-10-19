@@ -163,6 +163,193 @@
         "bestSale": "Best sale:",
         "navigation": "Navigate easily between months"
       }
+    },
+    "features": {
+      "title": "6 features that transform your wallet",
+      "item1": "Detailed financial summary with monthly results",
+      "item2": "Automatic categorization of each transaction",
+      "item3": "Search field to filter your results",
+      "item4": "CSV download for Excel and accounting",
+      "item5": "PDF download of monthly report",
+      "item6": "Easy navigation by month via popup"
+    },
+    "gallery": {
+      "title": "Discover Vinted Extended Wallet in images",
+      "subtitle": "Here's how your Vinted wallet will be transformed",
+      "item1": {
+        "title": "Complete dashboard",
+        "description": "Overview of your performance with detailed statistics"
+      },
+      "item2": {
+        "title": "CSV export for Excel",
+        "description": "Formatted and ready data for your analysis"
+      },
+      "item3": {
+        "title": "Native extension popup",
+        "description": "Interface integrated directly into your browser"
+      },
+      "item4": {
+        "title": "Excel import wizard",
+        "description": "Easily import your data from Excel"
+      },
+      "item5": {
+        "title": "Monthly PDF report",
+        "description": "Professional documents generated automatically"
+      }
+    },
+    "problemSolution": {
+      "title": "Vinted doesn't give you enough information about your performance",
+      "before": {
+        "title": "BEFORE Extended Wallet",
+        "point1": "No clear vision of your real performance",
+        "point2": "Difficult to filter and analyze your transactions",
+        "point3": "No export for your accountant or analysis",
+        "point4": "No categorization of different operation types",
+        "point5": "Basic interface without detailed statistics"
+      },
+      "after": {
+        "title": "AFTER Extended Wallet",
+        "point1": "Complete financial summary with net result",
+        "point2": "Advanced search and filters by period/type",
+        "point3": "CSV/Excel export and professional PDF reports",
+        "point4": "Automatic categorization (sales, purchases, fees...)",
+        "point5": "Professional interface natively integrated into Vinted"
+      },
+      "solution": {
+        "title": "Vinted Extended Wallet changes everything!",
+        "before": {
+          "title": "❌ BEFORE (basic wallet)",
+          "balance": "💰 \"My balance: €127.40\"",
+          "question1": "❓ \"How much did I sell this month?\"",
+          "question2": "🔍 \"How to find a transaction?\"",
+          "noVisibility": "📊 No visibility on your performance"
+        },
+        "after": {
+          "title": "✅ AFTER (Vinted Extended Wallet)",
+          "summary": "Monthly summary: +€1579.21 net",
+          "details": "46 sales • 21 purchases • 4 withdrawals",
+          "search": "Advanced search: filter by type, amount, date",
+          "categorization": "📈 Automatic categorization of each line",
+          "exports": "💾 CSV export + PDF report + Monthly navigation"
+        }
+      }
+    },
+    "detailedFeatures": {
+      "title": "Discover everything you get",
+      "feature1": {
+        "title": "Complete financial summary",
+        "description": "Dashboard with sales, purchases, withdrawals and net result for the displayed month. See your performance immediately."
+      },
+      "feature2": {
+        "title": "Automatic categorization",
+        "description": "Every transaction is automatically categorized (sale, purchase, fee, withdrawal) for better visibility."
+      },
+      "feature3": {
+        "title": "Advanced search and filters",
+        "description": "Built-in search field to filter your transactions by title, amount, date or operation type."
+      },
+      "feature4": {
+        "title": "CSV export for Excel",
+        "description": "Export all displayed transactions to CSV for Excel, your accountant or personal analysis."
+      },
+      "feature5": {
+        "title": "Monthly PDF report",
+        "description": "Generate a professional PDF report for the displayed month with all your statistics and charts."
+      },
+      "feature6": {
+        "title": "Easy monthly navigation",
+        "description": "Intuitive popup to quickly navigate between different months and browse your history."
+      },
+      "pricing": {
+        "title": "Transparent pricing",
+        "price": "Annual subscription: <strong>€28 incl. tax</strong>",
+        "included": "All features included • Free updates • Technical support"
+      }
+    },
+    "testimonials": {
+      "title": "What our users say",
+      "testimonial1": {
+        "quote": "\"Finally I can see my real performance! The financial summary and advanced search helped me identify my best sales periods. CSV export saves me hours for my accounting.\"",
+        "name": "Patrick M.",
+        "role": "Vinted seller for 3 years"
+      },
+      "testimonial2": {
+        "quote": "\"The monthly PDF report is perfect for my tax returns! No more screenshots or manual note-taking. Everything is automatic and professional.\"",
+        "name": "Marie L.",
+        "role": "Fashion entrepreneur"
+      },
+      "testimonial3": {
+        "quote": "\"Advanced search and automatic categorization are amazing! I can analyze my sales by period, see which types of items work best... It's like having a pro dashboard directly in Vinted!\"",
+        "name": "Emma D.",
+        "role": "Professional reseller"
+      }
+    },
+    "order": {
+      "header": {
+        "title": "Order now",
+        "subtitle": "Immediate access after payment"
+      },
+      "product": {
+        "title": "Vinted Extended Wallet - Chrome Extension",
+        "feature1": "✓ Detailed statistics",
+        "feature2": "✓ Advanced filters by period, type, amount",
+        "feature3": "✓ CSV export of all operations",
+        "feature4": "✓ Professional monthly PDF report",
+        "feature5": "✓ Native interface integrated with Vinted",
+        "feature6": "✓ Lifetime updates included"
+      },
+      "price": "€28",
+      "subtotal": "Subtotal",
+      "subtotalAmount": "€28.00",
+      "vat": "Tax included",
+      "vatAmount": "€0.00",
+      "total": "Total",
+      "totalAmount": "€28.00",
+      "form": {
+        "title": "Complete your order",
+        "paymentInfo": "Secure payment by Stripe. You will receive your download link by email immediately after purchase.",
+        "guarantee1": "100% secure payment",
+        "guarantee2": "Immediate access",
+        "termsStart": "By ordering, you accept our",
+        "termsLink1": "terms of sale",
+        "termsAnd": "and our",
+        "termsLink2": "privacy policy"
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "question1": {
+        "title": "What does the financial summary contain?",
+        "answer": "The summary displays your sales, purchases, fees, withdrawals and net result for the month. Each category is automatically calculated and color-coded for quick reading."
+      },
+      "question2": {
+        "title": "How does advanced search work?",
+        "answer": "Use the search field to filter your transactions by title, amount, date or type. Automatic categorization helps you quickly identify different types of operations."
+      },
+      "question3": {
+        "title": "What does the CSV export contain?",
+        "answer": "All displayed transactions with their date, type, amount, description, status... Excel compatible and ideal for your accountant."
+      },
+      "question4": {
+        "title": "What does the PDF report look like?",
+        "answer": "A professional document with your monthly summary, evolution charts, and transaction details. Perfect for your tax returns or personal tracking."
+      },
+      "question5": {
+        "title": "How to navigate between months?",
+        "answer": "An intuitive popup allows you to quickly select any month. The summary and exports automatically adapt to the chosen period."
+      },
+      "question6": {
+        "title": "How to receive the extension after purchase?",
+        "answer": "You will immediately receive a download link by email with detailed installation instructions."
+      }
+    },
+    "footer": {
+      "tagline": "Innovative software development solutions",
+      "home": "Home",
+      "terms": "Terms of use",
+      "privacy": "Privacy policy",
+      "contact": "Contact",
+      "copyright": "&copy; 2025 VMSI Solutions. All rights reserved."
     }
   },
   "cguPage": {
@@ -171,7 +358,180 @@
     },
     "title": "TERMS OF USE",
     "subtitle": "Chrome Extension \"Vinted Extended Wallet\"",
-    "version": "Version 1.0 - Effective date: October 13, 2025"
+    "version": "Version 1.0 - Effective date: October 13, 2025",
+    "legalInfo": {
+      "title": "LEGAL INFORMATION",
+      "editorLabel": "Publisher:",
+      "editor": "VMSI Solutions",
+      "contactLabel": "Contact:",
+      "contact": "support@vmsi-solutions.fr",
+      "addressLabel": "Registered office:",
+      "address": "23 E route de la descente, 05000 Gap",
+      "directorLabel": "Publication manager:",
+      "director": "Vincent Maurel"
+    },
+    "purpose": {
+      "title": "PURPOSE AND SERVICE DESCRIPTION",
+      "description1": "These terms of use (hereinafter \"Terms\") govern the use of the Chrome extension \"Vinted Extended Wallet\" (hereinafter \"the Extension\") developed and published by VMSI Solutions.",
+      "description2": "The Extension allows users to extract, analyze and export their Vinted wallet data in PDF and CSV report format, as well as visualize detailed statistics of their transactions."
+    },
+    "acceptance": {
+      "title": "ACCEPTANCE OF TERMS",
+      "description": "Installation, activation or use of the Extension implies full acceptance of these Terms. If you do not accept all of these conditions, you must immediately stop using the Extension and uninstall it."
+    },
+    "features": {
+      "title": "EXTENSION FEATURES",
+      "intro": "The Extension offers the following features:",
+      "feature1": "Extraction and analysis of Vinted wallet transaction data",
+      "feature2": "Generation of professional PDF reports with detailed statistics",
+      "feature3": "Data export in CSV format",
+      "feature4": "Advanced filtering and search in transaction history",
+      "feature5": "Visual statistics and analysis of sales performance"
+    },
+    "pricing": {
+      "title": "LICENSE AND PRICING",
+      "trial": {
+        "title": "5.1 Trial period",
+        "description": "A free 15-day trial period is granted to any new user."
+      },
+      "license": {
+        "title": "5.2 Paid license",
+        "description": "After the trial period, use of the Extension requires the acquisition of an annual license at the rate of 28 euros including tax, automatically renewable."
+      },
+      "payment": {
+        "title": "5.3 Payment",
+        "description": "Payments are processed securely by Stripe. The user undertakes to provide accurate and up-to-date payment information."
+      },
+      "renewal": {
+        "title": "5.4 Renewal",
+        "description": "Unless terminated before the due date, the license is automatically renewed for a period of one year at the same rate."
+      }
+    },
+    "dataCollection": {
+      "title": "DATA COLLECTION AND PROCESSING",
+      "collected": {
+        "title": "6.1 Data collected by VMSI Solutions",
+        "intro": "VMSI Solutions only collects and processes:",
+        "username": "Your Vinted username (for license management)",
+        "billing": "Your email address and billing information (for billing and support)"
+      },
+      "notCollected": {
+        "title": "6.2 Data NOT collected",
+        "commitment": "VMSI Solutions formally commits to NEVER collect, process or transmit:",
+        "financial": "Your personal financial data",
+        "transactions": "Details of your Vinted transactions",
+        "amounts": "Content or amounts of your operations",
+        "interface": "Any other data from the Vinted interface"
+      },
+      "local": {
+        "title": "6.3 Local processing",
+        "description": "All transaction data processing is performed locally in your browser. No transaction data is transmitted to VMSI Solutions servers."
+      },
+      "retention": {
+        "title": "6.4 Data retention",
+        "description": "Personal data collected is retained for 3 years from the end of your subscription, then automatically deleted."
+      }
+    },
+    "rights": {
+      "title": "USAGE RIGHTS AND RESTRICTIONS",
+      "license": {
+        "title": "7.1 License grant",
+        "description": "VMSI Solutions grants you a personal license valid for one and only one Vinted account, non-transferable and revocable for use of the Extension."
+      },
+      "authorized": {
+        "title": "7.2 Authorized use",
+        "description": "The Extension may be used in a personal or professional context, subject to compliance with these Terms."
+      },
+      "restrictions": {
+        "title": "7.3 Restrictions",
+        "intro": "It is strictly prohibited to:",
+        "reverse": "Modify, decompile, reverse engineer or attempt to extract the source code of the Extension",
+        "illegal": "Use the Extension for illegal purposes or contrary to public order",
+        "resell": "Resell, redistribute or sublicense the Extension",
+        "bypass": "Circumvent technical protection measures",
+        "harm": "Use the Extension in a way that infringes the rights of Vinted or third parties"
+      }
+    },
+    "responsibilities": {
+      "title": "RESPONSIBILITIES AND LIMITATIONS",
+      "limitation": {
+        "title": "8.1 Limitation of liability",
+        "intro": "VMSI Solutions expressly disclaims any liability concerning:",
+        "usage": "Use of the Extension by the user",
+        "decisions": "Decisions made based on files generated by the Extension",
+        "consequences": "Consequences of exploiting extracted data",
+        "damages": "Direct or indirect damages resulting from use of the Extension"
+      },
+      "dataValue": {
+        "title": "8.2 Data value",
+        "important": "IMPORTANT:",
+        "disclaimer": "Data produced by the Extension has no official accounting, tax or legal value. It cannot under any circumstances be used as official accounting, tax or legal evidence. The user remains solely responsible for verifying and validating their data with official sources."
+      },
+      "availability": {
+        "title": "8.3 Service availability",
+        "description": "The Extension may become temporarily non-functional in case of changes to the structure of Vinted web pages. VMSI Solutions undertakes to deploy a fix within a maximum of 15 calendar days following awareness of such malfunction."
+      }
+    },
+    "support": {
+      "title": "TECHNICAL SUPPORT",
+      "availability": "Technical support is available by email at: support@vmsi-solutions.fr",
+      "commitment": "VMSI Solutions endeavors to respond to support requests as quickly as possible, without however committing to a specific response time."
+    },
+    "intellectualProperty": {
+      "title": "INTELLECTUAL PROPERTY",
+      "description": "The Extension, including its source code, interface, algorithms and documentation, constitutes a work protected by intellectual property rights. All rights are reserved to VMSI Solutions."
+    },
+    "gdpr": {
+      "title": "PERSONAL DATA AND GDPR",
+      "compliance": "The processing of your personal data is carried out in compliance with the General Data Protection Regulation (GDPR) and the French \"Data Protection\" law.",
+      "rights": "You have the rights of access, rectification, deletion, portability, limitation of processing and opposition. To exercise these rights, contact us at: support@vmsi-solutions.fr"
+    },
+    "termination": {
+      "title": "TERMINATION",
+      "byUser": {
+        "title": "12.1 Termination by user",
+        "description": "The user can terminate their subscription at any time by contacting technical support. Termination takes effect at the end of the current billing period."
+      },
+      "byVmsi": {
+        "title": "12.2 Termination by VMSI Solutions",
+        "intro": "VMSI Solutions reserves the right to suspend or immediately terminate access to the Extension in case of:",
+        "violation": "Non-compliance with these Terms",
+        "payment": "Non-payment of amounts due",
+        "fraud": "Fraudulent or abusive use of the Extension"
+      }
+    },
+    "modifications": {
+      "title": "TERMS MODIFICATIONS",
+      "description": "VMSI Solutions reserves the right to modify these Terms at any time. Modifications take effect upon publication. The user will be informed of modifications when updating the Extension. Continued use after modification constitutes acceptance of the new conditions."
+    },
+    "jurisdiction": {
+      "title": "APPLICABLE LAW AND JURISDICTION",
+      "law": "These Terms are governed by French law.",
+      "dispute": {
+        "title": "IN CASE OF DISPUTE",
+        "description": "and after failure of any amicable resolution attempt,",
+        "competence": "FRENCH COURTS SHALL HAVE SOLE JURISDICTION",
+        "scope": "regardless of the place of execution or domicile of the defendant."
+      }
+    },
+    "contact": {
+      "title": "CONTACT AND COMPLAINTS",
+      "intro": "For any question, complaint or request relating to these Terms or the use of the Extension, you can contact us at:",
+      "emailLabel": "Email:",
+      "email": "support@vmsi-solutions.fr",
+      "subjectLabel": "Subject:",
+      "subject": "[Please specify: Terms / Technical support / Complaint]",
+      "addressLabel": "Address:",
+      "address": "VMSI Solutions - 23 E route de la descente - 05000 Gap"
+    },
+    "footer": {
+      "acknowledgment": "By installing and using the \"Vinted Extended Wallet\" Extension, you acknowledge having read, understood and fully accepted these Terms of Use.",
+      "extendedWallet": "Extended Wallet",
+      "privacy": "Privacy Policy",
+      "home": "VMSI Home",
+      "lastUpdate": "Last update: October 13, 2025",
+      "copyright": "© 2025 VMSI Solutions - All rights reserved"
+    }
   },
   "privacyPage": {
     "nav": {
@@ -179,6 +539,242 @@
     },
     "title": "PRIVACY POLICY",
     "subtitle": "Chrome Extension \"Vinted Extended Wallet\"",
-    "version": "Version 1.0 - Effective date: October 13, 2025"
+    "version": "Version 1.0 - Effective date: October 13, 2025",
+    "commitment": {
+      "title": "OUR COMMITMENT TO YOUR PRIVACY",
+      "description": "VMSI Solutions is committed to protecting your privacy and personal data.",
+      "explanation": "This privacy policy explains how we collect, use and protect your information when using the \"Vinted Extended Wallet\" extension."
+    },
+    "generalInfo": {
+      "title": "GENERAL INFORMATION",
+      "controllerLabel": "Data controller:",
+      "controller": "VMSI Solutions",
+      "contactLabel": "Contact:",
+      "contact": "support@vmsi-solutions.fr",
+      "addressLabel": "Registered office:",
+      "address": "23 E route de la descente, 05000 Gap",
+      "dpoLabel": "DPO:",
+      "dpo": "support@vmsi-solutions.fr"
+    },
+    "dataCollection": {
+      "title": "DATA COLLECTED",
+      "collected": {
+        "title": "Data we collect"
+      },
+      "table": {
+        "dataType": "Data type",
+        "purpose": "Purpose",
+        "legalBasis": "Legal basis",
+        "retention": "Retention period",
+        "vintedUsername": "Vinted username",
+        "licenseManagement": "License management and authentication",
+        "contractExecution": "Contract execution",
+        "threeYears": "3 years after subscription ends",
+        "email": "Email address",
+        "billingSupport": "Billing, customer support, communication",
+        "billingInfo": "Billing information",
+        "invoiceLegal": "Invoice issuance, legal obligations",
+        "legalObligation": "Legal obligation",
+        "tenYears": "10 years (accounting obligations)"
+      },
+      "notCollected": {
+        "title": "Data we do NOT collect",
+        "commitment": "We formally commit to NEVER collect:",
+        "financial": "Your personal financial data",
+        "financialDetails": "(bank accounts, credit cards, balances)",
+        "transactions": "Your Vinted transactions",
+        "transactionDetails": "(sales details, purchases, amounts)",
+        "history": "Your browsing history",
+        "historyDetails": "on Vinted",
+        "conversations": "Your conversations",
+        "conversationDetails": "with other Vinted users",
+        "personalData": "Your Vinted personal data",
+        "personalDetails": "(address, phone, etc.)",
+        "otherInfo": "Any other information",
+        "otherDetails": "from the Vinted interface"
+      }
+    },
+    "dataProcessing": {
+      "title": "DATA PROCESSING",
+      "local": {
+        "title": "Local processing",
+        "principle": "FUNDAMENTAL PRINCIPLE:",
+        "description": "All your Vinted transaction data is processed exclusively and locally in your browser. It never leaves your computer and is never transmitted to our servers."
+      },
+      "purposes": {
+        "title": "Processing purposes",
+        "intro": "We process your personal data only for:",
+        "licenseLabel": "License management:",
+        "licenseDesc": "Verification of extension access rights",
+        "billingLabel": "Billing:",
+        "billingDesc": "Invoice issuance and payment management",
+        "supportLabel": "Technical support:",
+        "supportDesc": "Assistance and problem resolution",
+        "communicationLabel": "Communication:",
+        "communicationDesc": "Important service information",
+        "legalLabel": "Legal obligations:",
+        "legalDesc": "Compliance with accounting and tax obligations"
+      },
+      "legalBasis": {
+        "title": "Legal basis",
+        "intro": "Our processing is based on:",
+        "contractLabel": "Contract execution:",
+        "contractDesc": "To provide extension services",
+        "obligationLabel": "Legal obligation:",
+        "obligationDesc": "To comply with our accounting and tax obligations",
+        "interestLabel": "Legitimate interest:",
+        "interestDesc": "To improve our services and ensure security"
+      }
+    },
+    "dataSharing": {
+      "title": "DATA SHARING",
+      "recipients": {
+        "title": "Recipients",
+        "intro": "Your personal data may be communicated to:",
+        "vmsiLabel": "VMSI Solutions:",
+        "vmsiDesc": "Authorized personnel for service management",
+        "stripeLabel": "Stripe:",
+        "stripeDesc": "Secure payment processor (billing data only)",
+        "authoritiesLabel": "Competent authorities:",
+        "authoritiesDesc": "In case of legal or judicial obligation"
+      },
+      "transfers": {
+        "title": "International transfers",
+        "description": "Data may be transferred to third countries as part of using Stripe (United States). These transfers are secured by appropriate safeguards compliant with GDPR."
+      }
+    },
+    "security": {
+      "title": "DATA SECURITY",
+      "intro": "We implement appropriate technical and organizational measures to protect your data:",
+      "encryptionLabel": "Encryption:",
+      "encryptionDesc": "All communications are encrypted (HTTPS/TLS)",
+      "accessLabel": "Restricted access:",
+      "accessDesc": "Only authorized personnel have access to data",
+      "monitoringLabel": "Monitoring:",
+      "monitoringDesc": "Monitoring and detection of intrusion attempts",
+      "backupLabel": "Backup:",
+      "backupDesc": "Regular and secure backups",
+      "auditLabel": "Audits:",
+      "auditDesc": "Regular security controls"
+    },
+    "retention": {
+      "title": "DATA RETENTION",
+      "table": {
+        "dataType": "Data type",
+        "duration": "Retention period",
+        "reason": "Reason",
+        "accountData": "Account data",
+        "subscriptionPlus3": "During subscription period + 3 years",
+        "serviceManagement": "Service management and claims",
+        "billingData": "Billing data",
+        "tenYears": "10 years",
+        "legalObligations": "Accounting and tax obligations",
+        "supportData": "Support data",
+        "threeYearsAfter": "3 years after resolution",
+        "serviceImprovement": "Service improvement"
+      }
+    },
+    "rights": {
+      "title": "YOUR RIGHTS",
+      "intro": "In accordance with GDPR, you have the following rights:",
+      "access": {
+        "title": "Right of access",
+        "description": "You can request access to your personal data that we hold."
+      },
+      "rectification": {
+        "title": "Right to rectification",
+        "description": "You can request correction of inaccurate or incomplete data."
+      },
+      "erasure": {
+        "title": "Right to erasure",
+        "description": "You can request deletion of your data in certain cases."
+      },
+      "restriction": {
+        "title": "Right to restriction",
+        "description": "You can request restriction of processing of your data."
+      },
+      "portability": {
+        "title": "Right to data portability",
+        "description": "You can retrieve your data in a structured format."
+      },
+      "objection": {
+        "title": "Right to object",
+        "description": "You can object to the processing of your data in certain cases."
+      },
+      "withdrawal": {
+        "title": "Right to withdraw consent",
+        "description": "You can withdraw your consent at any time when it is the basis for processing."
+      },
+      "exercise": {
+        "title": "Exercising your rights",
+        "contact": "To exercise your rights, contact us at: <strong>support@vmsi-solutions.fr</strong>",
+        "response": "We will respond to your request within a maximum of <strong>30 days</strong>."
+      },
+      "complaint": {
+        "title": "Complaint",
+        "description": "You have the right to lodge a complaint with the French Data Protection Authority (CNIL) if you believe that the processing of your personal data constitutes a violation of GDPR.",
+        "cnilLabel": "CNIL:",
+        "cnilAddress": "3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07",
+        "websiteLabel": "Website:",
+        "websiteUrl": "www.cnil.fr"
+      }
+    },
+    "cookies": {
+      "title": "COOKIES AND SIMILAR TECHNOLOGIES",
+      "intro": "Our extension does not use any tracking or advertising cookies. The only data stored locally are:",
+      "preferences": {
+        "label": "User preferences:",
+        "description": "Display settings and extension configuration"
+      },
+      "cache": {
+        "label": "Temporary cache:",
+        "description": "Technical data necessary for extension operation"
+      },
+      "license": {
+        "label": "Activation license:",
+        "description": "Authentication information to verify your usage rights"
+      },
+      "security": "This data remains entirely on your device and is never transmitted to third parties."
+    },
+    "children": {
+      "title": "CHILDREN",
+      "ageLimit": "Our service is not intended for persons under 16 years of age. We do not knowingly collect personal data from children under 16.",
+      "parentNotice": "If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately."
+    },
+    "modifications": {
+      "title": "MODIFICATIONS TO THIS POLICY",
+      "intro": "We may update this privacy policy from time to time. We will inform you of any changes by:",
+      "publishing": "Publishing the new policy on this page",
+      "notification": "Displaying a notification in the extension",
+      "email": "Sending you an email if the changes are significant",
+      "effective": "This policy is effective from the date indicated at the top of this page."
+    },
+    "law": {
+      "title": "APPLICABLE LEGISLATION",
+      "intro": "This privacy policy is governed by French law and in particular:",
+      "gdpr": "The General Data Protection Regulation (GDPR)",
+      "frenchLaw": "The amended Data Protection Act",
+      "consumerCode": "The Consumer Code"
+    },
+    "contact": {
+      "title": "CONTACT US",
+      "intro": "For any questions regarding this privacy policy or the processing of your personal data, you can contact us:",
+      "emailLabel": "Email:",
+      "email": "support@vmsi-solutions.fr",
+      "subjectLabel": "Subject:",
+      "subject": "[Privacy / Data Protection / GDPR]",
+      "addressLabel": "Postal address:",
+      "address": "VMSI Solutions - 23 E route de la descente - 05000 Gap",
+      "dpoLabel": "Data Protection Officer (DPO):",
+      "dpo": "support@vmsi-solutions.fr"
+    },
+    "footer": {
+      "acknowledgment": "By using the \"Vinted Extended Wallet\" extension, you acknowledge having read, understood and fully accepted this Privacy Policy.",
+      "extendedWallet": "Extended Wallet",
+      "terms": "Terms of Use",
+      "home": "VMSI Home",
+      "lastUpdate": "Last update: October 13, 2025",
+      "copyright": "© 2025 VMSI Solutions - All rights reserved"
+    }
   }
 }

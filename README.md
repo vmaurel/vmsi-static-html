@@ -10,19 +10,29 @@ Site web statique professionnel pour VMSI, entreprise spécialisée dans le dév
 - **Navigation mobile** - Menu hamburger responsive
 - **Formulaire de contact** - Validation côté client
 - **Section Extended Wallet** - Page dédiée à l'extension Chrome pour Vinted
+- **Site multilingue** - Support complet français, anglais, allemand, espagnol
+- **Pages légales complètes** - CGU et Politique de confidentialité internationalisées
 
 ## 📁 Structure du projet
 
 ```
 vmsi-static-html/
-├── index.html                    # Page principale
-├── vinted-extended-wallet.html   # Page dédiée Extended Wallet
+├── index.html                           # Page principale
+├── vinted-extended-wallet.html          # Page dédiée Extended Wallet
+├── vinted-extended-wallet-cgu.html      # Conditions générales d'utilisation
+├── politique-confidentialite.html      # Politique de confidentialité
 ├── css/
-│   ├── styles.css               # Styles CSS principaux
-│   └── tunnel-vente.css         # Styles pour la page Extended Wallet
+│   ├── styles.css                      # Styles CSS principaux
+│   └── tunnel-vente.css                # Styles pour la page Extended Wallet
 ├── js/
-│   ├── script.js                # Interactions page principale
-│   └── tunnel-vente.js          # Scripts page Extended Wallet
+│   ├── script.js                       # Interactions page principale
+│   ├── tunnel-vente.js                 # Scripts page Extended Wallet
+│   └── i18n.js                         # Moteur d'internationalisation
+├── locales/
+│   ├── fr.json                         # Traductions françaises
+│   ├── en.json                         # Traductions anglaises
+│   ├── de.json                         # Traductions allemandes
+│   └── es.json                         # Traductions espagnoles
 ├── images/
 │   ├── extended-wallet-logo.svg        # Logo Extended Wallet (SVG)
 │   ├── extended-wallet-logo.png        # Logo Extended Wallet (200×200)
@@ -30,8 +40,9 @@ vmsi-static-html/
 │   ├── extended-wallet-favicon.svg     # Favicon spécifique
 │   ├── extended-wallet-favicon-*.png   # Favicons PNG (32/48/128px)
 │   └── vmsi-logo*.svg                  # Logos VMSI
-├── staticwebapp.config.json     # Configuration Azure Static Web Apps
-└── README.md                    # Documentation
+├── staticwebapp.config.json            # Configuration Azure Static Web Apps
+├── sitemap.xml                         # Plan du site pour SEO
+└── README.md                           # Documentation
 ```
 
 ## � Extended Wallet - Extension Chrome
@@ -52,6 +63,13 @@ Extended Wallet transforme le porte-monnaie Vinted basique en tableau de bord pr
 - **Design** : Landing page optimisée pour la conversion
 - **Paiement** : Intégration Stripe Buy Button (28€ Abonnement annuel)
 - **Sections** : Hero, problème/solution, fonctionnalités, témoignages, FAQ
+- **Langues** : Français, anglais, allemand, espagnol (sélecteur intégré)
+
+### Pages légales
+- **CGU** : `vinted-extended-wallet-cgu.html` - Conditions générales complètes
+- **Confidentialité** : `politique-confidentialite.html` - Politique RGPD complète
+- **Multilingue** : Toutes les pages légales disponibles en 4 langues
+- **Conformité** : RGPD, CNIL, terminologie juridique professionnelle
 
 ## �🎨 Personnalisation des couleurs
 
@@ -77,6 +95,35 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 --primary-color: #00b894;
 --secondary-color: #0984e3;
 --accent-color: #e17055;
+```
+
+## 🌍 Internationalisation
+
+### Système i18n complet
+- **Moteur** : `i18n.js` - Système de traduction dynamique client-side
+- **Attributs** : `data-i18n` sur tous les éléments traduisibles
+- **Stockage** : Préférence langue sauvegardée en localStorage
+- **Sélecteur** : Interface utilisateur avec drapeaux dans toutes les pages
+
+### Langues supportées
+- 🇫🇷 **Français** - Langue par défaut
+- 🇬🇧 **Anglais** - Traduction professionnelle complète
+- 🇩🇪 **Allemand** - Terminologie juridique DSGVO
+- 🇪🇸 **Espagnol** - Traduction commerciale et légale
+
+### Pages internationalisées
+- ✅ **Extended Wallet** : Page produit complète (120+ clés)
+- ✅ **CGU** : Conditions générales (100+ clés)
+- ✅ **Politique** : Confidentialité RGPD (120+ clés)
+- 🔄 **À venir** : Page principale VMSI
+
+### Structure des traductions
+```json
+{
+  "extendedWallet": { /* Page produit */ },
+  "cguPage": { /* Conditions générales */ },
+  "privacyPage": { /* Politique confidentialité */ }
+}
 ```
 
 ## 📱 Sections du site principal
@@ -130,11 +177,13 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 - **HTML5** : Structure sémantique
 - **CSS3** : Variables, Grid, Flexbox, animations
 - **JavaScript** : ES6+, Intersection Observer, animations
+- **i18n.js** : Système d'internationalisation client-side
 
 ### Intégrations
 - **Stripe** : Paiement sécurisé pour Extended Wallet
 - **Font Awesome** : Icônes
 - **Google Fonts** : Police Inter
+- **JSON** : Fichiers de traduction structurés
 
 ### Outils
 - **rsvg-convert** : Génération PNG depuis SVG
@@ -176,6 +225,9 @@ Le site utilise des variables CSS pour une personnalisation facile. Trois thème
 ## 🎯 Roadmap
 
 ### Prochaines améliorations
+- [x] **Internationalisation complète** - 4 langues (FR/EN/DE/ES)
+- [x] **Pages légales multilingues** - CGU et Politique RGPD
+- [ ] Internationalisation page principale VMSI
 - [ ] Intégration Google Analytics
 - [ ] Tests A/B pour la page Extended Wallet
 - [ ] Capture d'écran réelles de l'extension
