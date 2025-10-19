@@ -804,8 +804,10 @@
       "importantLabel": "Important :",
       "importantText": "N'installez Vinted Extended Wallet que depuis le Chrome Web Store officiel pour votre sécurité.",
       "description3": "Cliquez sur le bouton \"Ajouter à Chrome\" pour commencer l'installation.",
+      "webstoreButton": "Accéder au Chrome Web Store",
       "imageTitle": "Capture d'écran du Chrome Web Store",
-      "imageDescription": "Page Vinted Extended Wallet avec bouton \"Ajouter à Chrome\""
+      "imageDescription": "Page d'Vinted Extended Wallet avec bouton \"Ajouter à Chrome\"",
+      "imageAlt": "Page Chrome Web Store pour Vinted Extended Wallet avec bouton Ajouter à Chrome"
     },
     "step2": {
       "title": "Installer l'extension",
@@ -815,7 +817,8 @@
       "noteText": "L'extension demande l'autorisation d'accéder aux pages Vinted pour fonctionner correctement.",
       "description3": "L'icône Vinted Extended Wallet apparaîtra dans votre barre d'extensions Chrome.",
       "imageTitle": "Popup de confirmation Chrome",
-      "imageDescription": "\"Ajouter Vinted Extended Wallet ?\""
+      "imageDescription": "\"Ajouter Vinted Extended Wallet ?\"",
+      "imageAlt": "Popup de confirmation Chrome pour installer Vinted Extended Wallet"
     },
     "step3": {
       "title": "Épingler l'extension",
@@ -825,7 +828,8 @@
       "recommendedText": "Épingler l'extension vous permet d'y accéder rapidement depuis n'importe quelle page Vinted.",
       "description3": "L'icône Extended Wallet sera maintenant toujours visible dans votre barre d'outils.",
       "imageTitle": "Menu des extensions Chrome",
-      "imageDescription": "Épinglage d'Extended Wallet"
+      "imageDescription": "Épinglage d'Extended Wallet",
+      "imageAlt": "Menu des extensions Chrome montrant comment épingler Extended Wallet"
     },
     "step4": {
       "title": "Activer votre licence",
@@ -835,7 +839,8 @@
       "licenseText": "Vous l'avez reçue par email immédiatement après votre paiement. Vérifiez aussi vos spams.",
       "description3": "Cliquez sur \"Activer\" et c'est terminé ! Extended Wallet est maintenant prêt à transformer votre porte-monnaie Vinted.",
       "imageTitle": "Interface d'activation Extended Wallet",
-      "imageDescription": "Champ de saisie de la clé de licence"
+      "imageDescription": "Champ de saisie de la clé de licence",
+      "imageAlt": "Interface d'activation Extended Wallet avec champ de saisie de licence"
     },
     "success": {
       "title": "Félicitations !",

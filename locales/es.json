@@ -805,8 +805,10 @@
       "importantLabel": "Importante:",
       "importantText": "Solo instale Vinted Extended Wallet desde la Chrome Web Store oficial para su seguridad.",
       "description3": "Haga clic en el botón \"Añadir a Chrome\" para comenzar la instalación.",
+      "webstoreButton": "Acceder a Chrome Web Store",
       "imageTitle": "Captura de pantalla de Chrome Web Store",
-      "imageDescription": "Página de Vinted Extended Wallet con botón \"Añadir a Chrome\""
+      "imageDescription": "Página de Vinted Extended Wallet con botón \"Añadir a Chrome\"",
+      "imageAlt": "Página de Chrome Web Store para Vinted Extended Wallet con botón Añadir a Chrome"
     },
     "step2": {
       "title": "Instalar la extensión",
@@ -816,7 +818,8 @@
       "noteText": "La extensión solicita permiso para acceder a las páginas de Vinted para funcionar correctamente.",
       "description3": "El icono de Vinted Extended Wallet aparecerá en su barra de extensiones de Chrome.",
       "imageTitle": "Ventana emergente de confirmación de Chrome",
-      "imageDescription": "\"¿Agregar Vinted Extended Wallet?\""
+      "imageDescription": "\"¿Agregar Vinted Extended Wallet?\"",
+      "imageAlt": "Ventana emergente de confirmación de Chrome para instalar Vinted Extended Wallet"
     },
     "step3": {
       "title": "Anclar la extensión",
@@ -826,7 +829,8 @@
       "recommendedText": "Anclar la extensión le permite acceder rápidamente desde cualquier página de Vinted.",
       "description3": "El icono de Extended Wallet ahora siempre será visible en su barra de herramientas.",
       "imageTitle": "Menú de extensiones de Chrome",
-      "imageDescription": "Anclando Extended Wallet"
+      "imageDescription": "Anclando Extended Wallet",
+      "imageAlt": "Menú de extensiones de Chrome mostrando la opción para anclar Vinted Extended Wallet"
     },
     "step4": {
       "title": "Active su licencia",
@@ -836,7 +840,8 @@
       "licenseText": "La recibió por correo electrónico inmediatamente después de su pago. También revise su carpeta de spam.",
       "description3": "¡Haga clic en \"Activar\" y listo! Extended Wallet ahora está listo para transformar su billetera de Vinted.",
       "imageTitle": "Interfaz de activación de Extended Wallet",
-      "imageDescription": "Campo de entrada de clave de licencia"
+      "imageDescription": "Campo de entrada de clave de licencia",
+      "imageAlt": "Panel de activación de Vinted Extended Wallet con campo para ingresar la clave de licencia"
     },
     "success": {
       "title": "¡Felicitaciones!",

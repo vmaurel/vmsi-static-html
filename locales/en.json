@@ -799,14 +799,16 @@
       "installation": "Installation"
     },
     "step1": {
-      "title": "Access the Chrome Web Store",
-      "description1": "Go to the official Vinted Extended Wallet page in the Chrome Web Store.",
+      "title": "Access Chrome Web Store",
+      "description1": "Go to the official Vinted Extended Wallet page on the Chrome Web Store.",
       "description2": "This step ensures you download the official and secure version of the extension directly from Google.",
       "importantLabel": "Important:",
       "importantText": "Only install Vinted Extended Wallet from the official Chrome Web Store for your security.",
       "description3": "Click the \"Add to Chrome\" button to start the installation.",
-      "imageTitle": "Chrome Web Store Screenshot",
-      "imageDescription": "Vinted Extended Wallet page with \"Add to Chrome\" button"
+      "webstoreButton": "Access Chrome Web Store",
+      "imageTitle": "Chrome Web Store screenshot",
+      "imageDescription": "Vinted Extended Wallet page with \"Add to Chrome\" button",
+      "imageAlt": "Chrome Web Store page for Vinted Extended Wallet with Add to Chrome button"
     },
     "step2": {
       "title": "Install the Extension",
@@ -816,7 +818,8 @@
       "noteText": "The extension requests permission to access Vinted pages to function properly.",
       "description3": "The Vinted Extended Wallet icon will appear in your Chrome extensions bar.",
       "imageTitle": "Chrome Confirmation Popup",
-      "imageDescription": "\"Add Vinted Extended Wallet?\""
+      "imageDescription": "\"Add Vinted Extended Wallet?\"",
+      "imageAlt": "Chrome confirmation popup to install Vinted Extended Wallet"
     },
     "step3": {
       "title": "Pin the Extension",
@@ -826,7 +829,8 @@
       "recommendedText": "Pinning the extension allows you to access it quickly from any Vinted page.",
       "description3": "The Extended Wallet icon will now always be visible in your toolbar.",
       "imageTitle": "Chrome Extensions Menu",
-      "imageDescription": "Pinning Extended Wallet"
+      "imageDescription": "Pinning Extended Wallet",
+      "imageAlt": "Chrome extensions menu showing how to pin Extended Wallet"
     },
     "step4": {
       "title": "Activate Your License",
@@ -836,7 +840,8 @@
       "licenseText": "You received it by email immediately after your payment. Also check your spam folder.",
       "description3": "Click \"Activate\" and you're done! Extended Wallet is now ready to transform your Vinted wallet.",
       "imageTitle": "Extended Wallet Activation Interface",
-      "imageDescription": "License key input field"
+      "imageDescription": "License key input field",
+      "imageAlt": "Extended Wallet activation interface with license key input field"
     },
     "success": {
       "title": "Congratulations!",

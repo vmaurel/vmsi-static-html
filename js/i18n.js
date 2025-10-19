@@ -174,6 +174,12 @@ class I18n {
             const key = element.getAttribute('data-i18n-placeholder');
             element.placeholder = this.t(key);
         });
+
+        // Mise à jour des attributs alt traduits
+        document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+            const key = element.getAttribute('data-i18n-alt');
+            element.alt = this.t(key);
+        });
     }
 
     /**

@@ -800,13 +800,15 @@
     },
     "step1": {
       "title": "Chrome Web Store aufrufen",
-      "description1": "Besuchen Sie die offizielle Vinted Extended Wallet Seite im Chrome Web Store.",
+      "description1": "Gehen Sie zur offiziellen Vinted Extended Wallet-Seite im Chrome Web Store.",
       "description2": "Dieser Schritt stellt sicher, dass Sie die offizielle und sichere Version der Erweiterung direkt von Google herunterladen.",
       "importantLabel": "Wichtig:",
       "importantText": "Installieren Sie Vinted Extended Wallet nur aus dem offiziellen Chrome Web Store für Ihre Sicherheit.",
       "description3": "Klicken Sie auf die Schaltfläche \"Zu Chrome hinzufügen\", um die Installation zu starten.",
+      "webstoreButton": "Chrome Web Store aufrufen",
       "imageTitle": "Chrome Web Store Screenshot",
-      "imageDescription": "Vinted Extended Wallet Seite mit \"Zu Chrome hinzufügen\" Button"
+      "imageDescription": "Vinted Extended Wallet-Seite mit \"Zu Chrome hinzufügen\"-Schaltfläche",
+      "imageAlt": "Chrome Web Store-Seite für Vinted Extended Wallet mit Zu Chrome hinzufügen-Schaltfläche"
     },
     "step2": {
       "title": "Erweiterung installieren",
@@ -816,7 +818,8 @@
       "noteText": "Die Erweiterung benötigt die Berechtigung, auf Vinted-Seiten zuzugreifen, um ordnungsgemäß zu funktionieren.",
       "description3": "Das Vinted Extended Wallet Symbol erscheint in Ihrer Chrome-Erweiterungsleiste.",
       "imageTitle": "Chrome Bestätigungs-Popup",
-      "imageDescription": "\"Vinted Extended Wallet hinzufügen?\""
+      "imageDescription": "\"Vinted Extended Wallet hinzufügen?\"",
+      "imageAlt": "Chrome Bestätigungs-Popup zur Installation von Vinted Extended Wallet"
     },
     "step3": {
       "title": "Erweiterung anheften",
@@ -826,7 +829,8 @@
       "recommendedText": "Das Anheften der Erweiterung ermöglicht Ihnen schnellen Zugriff von jeder Vinted-Seite aus.",
       "description3": "Das Extended Wallet Symbol ist nun immer in Ihrer Symbolleiste sichtbar.",
       "imageTitle": "Chrome Erweiterungsmenü",
-      "imageDescription": "Extended Wallet anheften"
+      "imageDescription": "Extended Wallet anheften",
+      "imageAlt": "Chrome Erweiterungsmenü zeigt wie Extended Wallet angeheftet wird"
     },
     "step4": {
       "title": "Ihre Lizenz aktivieren",
@@ -836,7 +840,8 @@
       "licenseText": "Sie haben ihn sofort nach Ihrer Zahlung per E-Mail erhalten. Überprüfen Sie auch Ihren Spam-Ordner.",
       "description3": "Klicken Sie auf \"Aktivieren\" und Sie sind fertig! Extended Wallet ist nun bereit, Ihr Vinted-Portemonnaie zu transformieren.",
       "imageTitle": "Extended Wallet Aktivierungsschnittstelle",
-      "imageDescription": "Lizenzschlüssel-Eingabefeld"
+      "imageDescription": "Lizenzschlüssel-Eingabefeld",
+      "imageAlt": "Extended Wallet Aktivierungsschnittstelle mit Lizenzschlüssel-Eingabefeld"
     },
     "success": {
       "title": "Herzlichen Glückwunsch!",
