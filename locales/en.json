@@ -776,5 +776,101 @@
       "lastUpdate": "Last update: October 13, 2025",
       "copyright": "© 2025 VMSI Solutions - All rights reserved"
     }
+  },
+  "installationPage": {
+    "nav": {
+      "extendedWallet": "Vinted Extended Wallet",
+      "installation": "Installation",
+      "support": "Support"
+    },
+    "hero": {
+      "badge": "Installation Guide",
+      "title": "Vinted Extended Wallet Installation",
+      "subtitle": "Follow these 4 simple steps to install and configure your Vinted Extended Wallet extension. The process takes less than 5 minutes and you'll be operational immediately!",
+      "stats": {
+        "steps": "Easy Steps",
+        "time": "Installation",
+        "secure": "Secure"
+      }
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "extendedWallet": "Vinted Extended Wallet",
+      "installation": "Installation"
+    },
+    "step1": {
+      "title": "Access the Chrome Web Store",
+      "description1": "Go to the official Vinted Extended Wallet page in the Chrome Web Store.",
+      "description2": "This step ensures you download the official and secure version of the extension directly from Google.",
+      "importantLabel": "Important:",
+      "importantText": "Only install Vinted Extended Wallet from the official Chrome Web Store for your security.",
+      "description3": "Click the \"Add to Chrome\" button to start the installation.",
+      "imageTitle": "Chrome Web Store Screenshot",
+      "imageDescription": "Vinted Extended Wallet page with \"Add to Chrome\" button"
+    },
+    "step2": {
+      "title": "Install the Extension",
+      "description1": "Chrome will ask you to confirm the installation. Click \"Add extension\" in the popup that appears.",
+      "description2": "The extension downloads and installs automatically. You'll see a confirmation notification once the installation is complete.",
+      "noteLabel": "Good to know:",
+      "noteText": "The extension requests permission to access Vinted pages to function properly.",
+      "description3": "The Vinted Extended Wallet icon will appear in your Chrome extensions bar.",
+      "imageTitle": "Chrome Confirmation Popup",
+      "imageDescription": "\"Add Vinted Extended Wallet?\""
+    },
+    "step3": {
+      "title": "Pin the Extension",
+      "description1": "To easily access Vinted Extended Wallet, pin the extension to your Chrome toolbar.",
+      "description2": "Click on the extensions icon (puzzle) in Chrome, then on the pin icon next to Vinted Extended Wallet.",
+      "recommendedLabel": "Recommended:",
+      "recommendedText": "Pinning the extension allows you to access it quickly from any Vinted page.",
+      "description3": "The Extended Wallet icon will now always be visible in your toolbar.",
+      "imageTitle": "Chrome Extensions Menu",
+      "imageDescription": "Pinning Extended Wallet"
+    },
+    "step4": {
+      "title": "Activate Your License",
+      "description1": "Click on the Extended Wallet icon in your toolbar to open the configuration panel.",
+      "description2": "Enter the license key you received by email after your purchase.",
+      "licenseLabel": "License Key:",
+      "licenseText": "You received it by email immediately after your payment. Also check your spam folder.",
+      "description3": "Click \"Activate\" and you're done! Extended Wallet is now ready to transform your Vinted wallet.",
+      "imageTitle": "Extended Wallet Activation Interface",
+      "imageDescription": "License key input field"
+    },
+    "success": {
+      "title": "Congratulations!",
+      "description": "Extended Wallet is now installed and activated. Go to your Vinted wallet to discover all the new features!",
+      "openWallet": "Open my Vinted Wallet",
+      "needHelp": "Need Help?"
+    },
+    "faq": {
+      "title": "Frequent Installation Questions",
+      "notFound": {
+        "question": "I can't find the extension in the Web Store",
+        "answer": "Search for \"Extended Wallet VMSI\" or use the direct link provided in your purchase confirmation email."
+      },
+      "lostKey": {
+        "question": "I lost my license key",
+        "answer": "Contact us at support@vmsi-solutions.fr with your purchase email. We'll resend your key immediately."
+      },
+      "notDisplayed": {
+        "question": "The extension doesn't appear on Vinted",
+        "answer": "Check that the extension is activated and that you're on vinted.fr/wallet/history. Reload the page if necessary."
+      },
+      "mobile": {
+        "question": "Does Extended Wallet work on mobile?",
+        "answer": "Extended Wallet is a Chrome desktop extension only. It doesn't work on the Vinted mobile app."
+      }
+    },
+    "footer": {
+      "tagline": "Innovative software development solutions",
+      "home": "Home",
+      "extendedWallet": "Extended Wallet",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "contact": "Contact",
+      "copyright": "© 2025 VMSI Solutions. All rights reserved."
+    }
   }
 }
